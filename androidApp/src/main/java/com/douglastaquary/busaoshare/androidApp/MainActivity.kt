@@ -2,19 +2,24 @@ package com.douglastaquary.busaoshare.androidApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.douglastaquary.busaoshare.shared.Greeting
-import android.widget.TextView
+import androidx.activity.compose.setContent
+import androidx.compose.runtime.*
 
-fun greet(): String {
-    return Greeting().greeting()
-}
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContent {
+            MainLayout()
+        }
+    }
+}
 
-        val tv: TextView = findViewById(R.id.text_view)
-        tv.text = greet()
+@Composable
+fun MainLayout() {
+    //val navController = rememberNavController()
+
+    BusShareTheme {
+        TripListScreen(searchText = "paulista", popBack = null)
     }
 }

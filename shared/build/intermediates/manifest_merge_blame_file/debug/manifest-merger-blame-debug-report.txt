@@ -3,7 +3,7 @@
 3    package="com.douglastaquary.busaoshare.shared" >
 4
 5    <uses-sdk
-6        android:minSdkVersion="24"
+6        android:minSdkVersion="21"
 6-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/shared/src/androidMain/AndroidManifest.xml
 7        android:targetSdkVersion="29" />
 7-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/shared/src/androidMain/AndroidManifest.xml

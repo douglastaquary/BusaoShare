@@ -12,9 +12,11 @@ dependencies {
 
 android {
     compileSdkVersion(29)
+    buildToolsVersion("29.0.3")
+
     defaultConfig {
         applicationId = "com.douglastaquary.busaoshare.androidApp"
-        minSdkVersion(24)
+        minSdkVersion(21)
         targetSdkVersion(29)
         versionCode = 1
         versionName = "1.0"

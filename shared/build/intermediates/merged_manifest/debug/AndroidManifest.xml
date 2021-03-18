@@ -3,7 +3,7 @@
     package="com.douglastaquary.busaoshare.shared" >
 
     <uses-sdk
-        android:minSdkVersion="24"
+        android:minSdkVersion="21"
         android:targetSdkVersion="29" />
 
 </manifest>
