@@ -993,6 +993,7 @@ int color background_floating_material_dark 0x7f05001d
 int color background_floating_material_light 0x7f05001e
 int color background_material_dark 0x7f05001f
 int color background_material_light 0x7f050020
+int color black 0x7f0500d1
 int color bright_foreground_disabled_material_dark 0x7f050021
 int color bright_foreground_disabled_material_light 0x7f050022
 int color bright_foreground_inverse_material_dark 0x7f050023
@@ -1006,9 +1007,6 @@ int color cardview_light_background 0x7f05002a
 int color cardview_shadow_end_color 0x7f05002b
 int color cardview_shadow_start_color 0x7f05002c
 int color checkbox_themeable_attribute_color 0x7f05002d
-int color colorAccent 0x7f05002e
-int color colorPrimary 0x7f05002f
-int color colorPrimaryDark 0x7f050030
 int color design_bottom_navigation_shadow_color 0x7f050031
 int color design_box_stroke_color 0x7f050032
 int color design_dark_default_color_background 0x7f050033
@@ -1057,6 +1055,9 @@ int color foreground_material_dark 0x7f05005d
 int color foreground_material_light 0x7f05005e
 int color highlighted_text_material_dark 0x7f05005f
 int color highlighted_text_material_light 0x7f050060
+int color maroon_200 0x7f0500d2
+int color maroon_500 0x7f0500d3
+int color maroon_700 0x7f0500d4
 int color material_blue_grey_800 0x7f050061
 int color material_blue_grey_900 0x7f050062
 int color material_blue_grey_950 0x7f050063
@@ -1165,10 +1166,13 @@ int color switch_thumb_material_dark 0x7f0500c9
 int color switch_thumb_material_light 0x7f0500ca
 int color switch_thumb_normal_material_dark 0x7f0500cb
 int color switch_thumb_normal_material_light 0x7f0500cc
+int color teal_200 0x7f0500d5
+int color teal_700 0x7f0500d6
 int color test_mtrl_calendar_day 0x7f0500cd
 int color test_mtrl_calendar_day_selected 0x7f0500ce
 int color tooltip_background_dark 0x7f0500cf
 int color tooltip_background_light 0x7f0500d0
+int color white 0x7f0500d7
 int dimen abc_action_bar_content_inset_material 0x7f060000
 int dimen abc_action_bar_content_inset_with_nav 0x7f060001
 int dimen abc_action_bar_default_height_material 0x7f060002
@@ -2301,6 +2305,7 @@ int string abc_searchview_description_voice 0x7f0d0017
 int string abc_shareactionprovider_share_with 0x7f0d0018
 int string abc_shareactionprovider_share_with_application 0x7f0d0019
 int string abc_toolbar_collapse_description 0x7f0d001a
+int string app_name 0x7f0d0063
 int string appbar_scrolling_view_behavior 0x7f0d001b
 int string bottom_sheet_behavior 0x7f0d001c
 int string bottomsheet_action_expand_halfway 0x7f0d001d
@@ -2381,7 +2386,6 @@ int style Animation_AppCompat_DropDownUp 0x7f0e0004
 int style Animation_AppCompat_Tooltip 0x7f0e0005
 int style Animation_Design_BottomSheetDialog 0x7f0e0006
 int style Animation_MaterialComponents_BottomSheetDialog 0x7f0e0007
-int style AppTheme 0x7f0e0008
 int style Base_AlertDialog_AppCompat 0x7f0e0009
 int style Base_AlertDialog_AppCompat_Light 0x7f0e000a
 int style Base_Animation_AppCompat_Dialog 0x7f0e000b
@@ -2784,6 +2788,8 @@ int style Theme_AppCompat_Light_Dialog_MinWidth 0x7f0e0197
 int style Theme_AppCompat_Light_DialogWhenLarge 0x7f0e0198
 int style Theme_AppCompat_Light_NoActionBar 0x7f0e0199
 int style Theme_AppCompat_NoActionBar 0x7f0e019a
+int style Theme_BusaoShare 0x7f0e02cd
+int style Theme_BusaoShare_NoActionBar 0x7f0e02ce
 int style Theme_Design 0x7f0e019b
 int style Theme_Design_BottomSheetDialog 0x7f0e019c
 int style Theme_Design_Light 0x7f0e019d
@@ -2839,6 +2845,8 @@ int style Theme_MaterialComponents_Light_NoActionBar 0x7f0e01ce
 int style Theme_MaterialComponents_Light_NoActionBar_Bridge 0x7f0e01cf
 int style Theme_MaterialComponents_NoActionBar 0x7f0e01d0
 int style Theme_MaterialComponents_NoActionBar_Bridge 0x7f0e01d1
+int style Theme_MyApplication_AppBarOverlay 0x7f0e02cf
+int style Theme_MyApplication_PopupOverlay 0x7f0e02d0
 int style ThemeOverlay_AppCompat 0x7f0e01d2
 int style ThemeOverlay_AppCompat_ActionBar 0x7f0e01d3
 int style ThemeOverlay_AppCompat_Dark 0x7f0e01d4

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
 MERGED from [:shared] /Users/douglastaquary/Documents/Projects/Github/BusaoShare/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [io.insert-koin:koin-androidx-compose:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/bb5d9266a329b95224a900ac41a51e8a/transformed/koin-androidx-compose-3.0.1-beta-1/AndroidManifest.xml:2:1-7:12
 MERGED from [io.insert-koin:koin-android:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/92dd04e330354dd84d4d0766c9aa9438/transformed/koin-android-3.0.1-beta-1/AndroidManifest.xml:2:1-9:12
@@ -85,25 +85,29 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/douglastaquary/.gr
 MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/e629a5dc172160cb68a0c66150745450/transformed/exifinterface-1.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/fd29d1bfd9991ccc9c82776f43ba7e25/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/9001e451f0a82d0e11924eba8813585d/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
 	package
 		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:70-120
 		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
 		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
 		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-14:12
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
 		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:3:5-13:19
+ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:6:5-22:19
 MERGED from [io.insert-koin:koin-android:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/92dd04e330354dd84d4d0766c9aa9438/transformed/koin-android-3.0.1-beta-1/AndroidManifest.xml:7:5-20
 MERGED from [io.insert-koin:koin-android:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/92dd04e330354dd84d4d0766c9aa9438/transformed/koin-android-3.0.1-beta-1/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.material:material:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/5b22e919035188c8a67a2dfb44ec1c22/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
@@ -125,25 +129,35 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/doug
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0-beta01] /Users/douglastaquary/.gradle/caches/transforms-3/604e7d3d1368c2cf27eb91e399c024a5/transformed/core-1.5.0-beta01/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:5:13-39
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:10:13-39
+	android:label
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:8:13-45
 	android:allowBackup
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:4:13-40
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:9:13-40
 	android:theme
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:6:13-44
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:12:13-52
+	android:usesCleartextTraffic
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:11:13-48
+	android:name
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:7:13-48
 activity#com.douglastaquary.busaoshare.androidApp.MainActivity
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:7:9-12:20
+ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:13:9-21:20
+	android:label
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:15:13-45
+	android:theme
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:16:13-64
 	android:name
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:7:19-47
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:14:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:8:13-11:29
+ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:17:13-20:29
 action#android.intent.action.MAIN
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:9:17-68
+ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:18:17-68
 	android:name
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:9:25-66
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:10:17-76
+ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:19:17-76
 	android:name
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:10:27-74
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:19:27-74
 uses-sdk
 INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml

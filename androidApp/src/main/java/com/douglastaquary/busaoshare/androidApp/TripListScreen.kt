@@ -12,6 +12,7 @@ import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.douglastaquary.busaoshare.shared.Trip
 import org.koin.androidx.compose.getViewModel
@@ -42,7 +43,6 @@ fun TripListScreen(searchText: String, popBack: (() -> Unit)?) {
         }
 
 }
-
 
 @Composable
 fun TripView(trip: Trip) {
