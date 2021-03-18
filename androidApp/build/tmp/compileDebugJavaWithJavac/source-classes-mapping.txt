@@ -1,0 +1,2 @@
+com/douglastaquary/busaoshare/androidApp/BuildConfig.java
+ com.douglastaquary.busaoshare.androidApp.BuildConfig
