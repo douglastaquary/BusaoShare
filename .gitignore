@@ -28,6 +28,8 @@ gradle-app.setting
 .cxx
 local.properties
 
+/androidApp/build
+/common/build
 
 *.xcworkspacedata
 *.xcuserstate
