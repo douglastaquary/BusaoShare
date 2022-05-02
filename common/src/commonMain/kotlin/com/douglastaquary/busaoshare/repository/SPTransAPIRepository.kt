@@ -18,19 +18,24 @@ open class SPTransAPIRepository: KoinComponent {
 
     @Throws(Exception::class)
     suspend fun authenticationRequest(): Boolean {
-        Logger.i { "fetchAndStoreBusStops" }
+        Logger.i { "authenticationRequest" }
         return sptransApi.authentication()
     }
 
     fun fetchTrips(searchName: String, success: (List<Trip>) -> Unit) {
         coroutineScope.launch {
+            Logger.i { "fetchTrips started" }
             if (isAuthenticated) {
                 val trips = sptransApi.fetchTrips(searchText = "$searchName")
+                Logger.i { "fetchTrips success" }
                 success(trips)
             } else {
+                Logger.i { "authenticating user..." }
                 if (authenticationRequest()) {
+                    Logger.i { "User authenticated" }
                     isAuthenticated = true
                     val tripList = sptransApi.fetchTrips(searchText = "$searchName")
+                    Logger.i { "fetchTrips success" }
                     success(tripList)
                 }
             }
