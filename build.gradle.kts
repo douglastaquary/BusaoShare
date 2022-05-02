@@ -1,26 +1,28 @@
 buildscript {
     repositories {
+        gradlePluginPortal()
         google()
-        jcenter()
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:7.0.0-alpha10")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.31")
-        classpath("org.jetbrains.kotlin:kotlin-serialization:1.4.31")
+        classpath("com.android.tools.build:gradle:7.0.4")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30")
+        classpath("org.jetbrains.kotlin:kotlin-serialization:1.5.30")
+        classpath("com.android.tools.build:gradle:7.1.3")
+        classpath("com.rickclephas.kmp:kmp-nativecoroutines-gradle-plugin:0.12.1-new-mm")
     }
 }
 
 allprojects {
     repositories {
         google()
-        jcenter()
         mavenCentral()
-        maven {
-            url = uri("https://kotlin.bintray.com/kotlinx/")
-            url = uri("https://dl.bintray.com/ekito/koin")
-            url = uri("https://jitpack.io")
-            url = uri("https://oss.sonatype.org/content/repositories/snapshots")
-        }
+        maven(url = "https://maven.pkg.jetbrains.space/public/p/ktor/eap")
+        maven(url = "https://maven.pkg.jetbrains.space/public/p/kotlinx-coroutines/maven")
+        maven(url = "https://androidx.dev/snapshots/builds/7909927/artifacts/repository")
     }
+}
+
+tasks.register("clean", Delete::class) {
+    delete(rootProject.buildDir)
 }
