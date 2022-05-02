@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.douglastaquary.busaoshare.androidApp"
+    package="com.douglastaquary.busaoshare.android"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="29" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
+        android:targetSdkVersion="31" />
 
     <application
-        android:name="com.douglastaquary.busaoshare.androidApp.BusShareApplication"
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:label="@string/app_name"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.BusaoShare"
-        android:usesCleartextTraffic="true" >
+        android:theme="@style/AppTheme" >
         <activity
-            android:name="com.douglastaquary.busaoshare.androidApp.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.BusaoShare.NoActionBar" >
+            android:name="com.douglastaquary.busaoshare.android.MainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="androidx.compose.ui.tooling.preview.PreviewActivity"
-            android:exported="true" />
-        <activity android:name="androidx.compose.ui.tooling.data.TestActivity" />
-
-        <provider
-            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="com.douglastaquary.busaoshare.androidApp.lifecycle-process"
-            android:exported="false"
-            android:multiprocess="true" />
     </application>
 
 </manifest>

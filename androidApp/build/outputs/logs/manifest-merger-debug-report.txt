@@ -1,356 +1,179 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
-MERGED from [:shared] /Users/douglastaquary/Documents/Projects/Github/BusaoShare/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [io.insert-koin:koin-androidx-compose:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/bb5d9266a329b95224a900ac41a51e8a/transformed/koin-androidx-compose-3.0.1-beta-1/AndroidManifest.xml:2:1-7:12
-MERGED from [io.insert-koin:koin-android:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/92dd04e330354dd84d4d0766c9aa9438/transformed/koin-android-3.0.1-beta-1/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.material:material:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/5b22e919035188c8a67a2dfb44ec1c22/transformed/material-1.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/douglastaquary/.gradle/caches/transforms-3/28239a7c58a30f07fc69dda778cd2982/transformed/constraintlayout-2.0.2/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/bfe29f4991957b9ff90f87df8183d3cc/transformed/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/c4c5f40ef024a8fa66cc5f091d8fe6c8/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.navigation:navigation-compose:1.0.0-alpha09] /Users/douglastaquary/.gradle/caches/transforms-3/8878b72b1f67b271e5fca52214d0cd8e/transformed/navigation-compose-1.0.0-alpha09/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha03] /Users/douglastaquary/.gradle/caches/transforms-3/18801654a57a4c7af04470efe7fa7ca2/transformed/lifecycle-viewmodel-compose-1.0.0-alpha03/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/31e302d7b93504ca564bd865966129f1/transformed/navigation-runtime-ktx-2.3.4/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment-ktx:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/2c285619346c96484b98857393b06f97/transformed/fragment-ktx-1.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.ui:ui-tooling:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6444f82d733c908403e184b50ae94bb8/transformed/ui-tooling-1.0.0-beta02/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.activity:activity-compose:1.3.0-alpha04] /Users/douglastaquary/.gradle/caches/transforms-3/bb36ec1241f0d724a668ccf7af0b5e43/transformed/activity-compose-1.3.0-alpha04/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity-ktx:1.3.0-alpha04] /Users/douglastaquary/.gradle/caches/transforms-3/41f61cf901056042f5787577cab09677/transformed/activity-ktx-1.3.0-alpha04/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/36b470eb8afbd6fddaf4d717a88dd0ab/transformed/lifecycle-viewmodel-ktx-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/258095f3be33f3ee8334906ad6cce2f5/transformed/lifecycle-livedata-ktx-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.material:material:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/7828000394e6fcf904ce7e3bf6b2cd29/transformed/material-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [dev.chrisbanes.accompanist:accompanist-coil:0.6.2] /Users/douglastaquary/.gradle/caches/transforms-3/789f131b9f0368ffcc90f0cfc4d7d2ec/transformed/accompanist-coil-0.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.material:material-ripple:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/fe576972785eda7823315f147740142d/transformed/material-ripple-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [dev.chrisbanes.accompanist:accompanist-imageloading-core:0.6.2] /Users/douglastaquary/.gradle/caches/transforms-3/e6eb7fbc3d092199b5c18135b3c0c9e4/transformed/accompanist-imageloading-core-0.6.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.foundation:foundation:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/fd5d7246ea4984970f8531d263a00e24/transformed/foundation-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.animation:animation:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/fedd13e08aafdd7e4bace3b482b7e7c7/transformed/animation-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.foundation:foundation-layout:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6170d393a07e63952c6f7e1943577c77/transformed/foundation-layout-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.runtime:runtime-livedata:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/2689bd6fd6ca1ab2b73da60184eb2ab9/transformed/runtime-livedata-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.ui:ui-tooling-data:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/f2ae053c6871f6ffce2518222a226b07/transformed/ui-tooling-data-1.0.0-beta02/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.compose.material:material-icons-core:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/2e1c9e7e5db959828676dd037932c1fe/transformed/material-icons-core-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.ui:ui:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/b00d8dff7f8d881443528b9dfe57c340/transformed/ui-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.ui:ui-text:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/7d9456e25e931ffcbe6e8c1b0fc7b2c9/transformed/ui-text-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.ui:ui-graphics:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/92f6ff97eec9ae02f54b522a808bbb9f/transformed/ui-graphics-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.animation:animation-core:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/5f332de83be229ca80f398c599019f39/transformed/animation-core-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.runtime:runtime-saveable:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/8a508df3c9b0d7db5e557eb5e6c32581/transformed/runtime-saveable-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.ui:ui-unit:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/d1c764fd5afa77f41e1b4ddda75aeb32/transformed/ui-unit-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.ui:ui-geometry:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/8ad17026fb0c3178df3c32b6cfad5b66/transformed/ui-geometry-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.ui:ui-util:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/4899a256369c7d42e553b431bfa7a3c5/transformed/ui-util-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.compose.runtime:runtime:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/5cccd498d2ac32581625c0998d737739/transformed/runtime-1.0.0-beta02/AndroidManifest.xml:17:1-24:12
-MERGED from [io.coil-kt:coil:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/0f84808e91d538c3dd2caefe987930e3/transformed/coil-1.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [io.coil-kt:coil-base:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/d7d785e000930835dcee238e9f530d24/transformed/coil-base-1.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/35c5011fa62d867e0247417609375977/transformed/lifecycle-runtime-ktx-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/1698455fe521c46b95eeb1dab0dd0073/transformed/lifecycle-livedata-core-ktx-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [co.touchlab:kermit-android-debug:0.1.8] /Users/douglastaquary/.gradle/caches/transforms-3/0f1eda9f053ca0a8f92f1f2a839686a6/transformed/kermit-debug/AndroidManifest.xml:11:1-16:12
-MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/d501eba11edab2cdad6a169ceb01c28e/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-common-ktx:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/af7201fd509fa22bfcf2d60cbc64f75c/transformed/navigation-common-ktx-2.3.4/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core-ktx:1.3.2] /Users/douglastaquary/.gradle/caches/transforms-3/ab3a66004e1531cd43024cadc9c17f84/transformed/core-ktx-1.3.2/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/926daafae0166456a93b95413272eae2/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/afdfeb6646d6096c8b0a3f55e41badda/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/0deec4fe4adf555d5a5ba538d56bd056/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/cf210693864b956dcc34297bbf3380d3/transformed/appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/adcdd7d0c3fd777e75af0607575f3aef/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/16bdab87972c94ef997a73fa23dfb805/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/0b87f4b8acf855cba288195971c05059/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/6184c623808c2fbe1aee0a664792ed0c/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/f35449f5e81ef1186899078ce788eb57/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/bbbd248ef7678b38c3cbb539f186923e/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/ada1e30c7389f918b87773f73051a1f5/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/bf3a6ae7e2d3a47b8c25b0c963ebcb93/transformed/fragment-1.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/81e76f7ab989ae9be173fce71036c33b/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/0bff13b0c10728b356d216a5d160a110/transformed/lifecycle-livedata-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:17:1-32:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/6d4516f134f99abe26b210c428064beb/transformed/lifecycle-service-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.autofill:autofill:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/f16ab4316783ed5d38da0754366c7a6e/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/265a3ee69dc0cef8a294987e10a6446b/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/fada5f214481808bbfeead9eaebac490/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/ae8f6700599ab908ce089fb5e5dea033/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-runtime:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/7083ff92e14b389cde309bf8a81b1562/transformed/navigation-runtime-2.3.4/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.3.0-alpha04] /Users/douglastaquary/.gradle/caches/transforms-3/ddb0f898c3ff3f250efdc3f439377235/transformed/activity-1.3.0-alpha04/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-common:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/206db6e026eb321fe2fbb1f5153ac68b/transformed/navigation-common-2.3.4/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.5.0-beta01] /Users/douglastaquary/.gradle/caches/transforms-3/604e7d3d1368c2cf27eb91e399c024a5/transformed/core-1.5.0-beta01/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/81abc761e6c29f7a2d33e3da4cd5df73/transformed/lifecycle-runtime-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/33f858d2813fdd3816316bd265d7f036/transformed/lifecycle-viewmodel-savedstate-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/e8e37f855473fcfbaa491691bd45cef3/transformed/lifecycle-livedata-core-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/5cba5a86ee5328946ad51f5564f83eef/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/07e3c214358e028ec91c440e6347d4b3/transformed/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/45a9d4ed627daa58105bdc7421fbda07/transformed/lifecycle-viewmodel-2.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/1a24007cc51747d40709740550f80b8f/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/afc28cf2a5b3d1db7c07bd851bedf34c/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/e3ccf0141338ffac9245b9760f6943f9/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/67e156411f42e81bc81414436e3bd8ee/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3c2490ea441c69b3bb127d531ebaf3c1/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/e629a5dc172160cb68a0c66150745450/transformed/exifinterface-1.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/fd29d1bfd9991ccc9c82776f43ba7e25/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/9001e451f0a82d0e11924eba8813585d/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:2:1-18:12
+MERGED from [:common] /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/common/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.material:material:1.4.0] /Users/douglastaquary/.gradle/caches/transforms-3/11e60734eb9147790823e2168d9edf26/transformed/material-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/e341e4e6d3f1536496af6b719a526f00/transformed/constraintlayout-2.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/12cd44b09c9f99bc2438250908771395/transformed/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/df04eee4d7f72d19e396ab0f81130682/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/e8dae4c7537666cfbf9a6c6de018b3ac/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3834e51e4c835c73f0879a5ce36098d5/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/a9d601cae1d5ee7ae2a15be7940fbdcf/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/849ec26641c1e91d5bc2ab127872c8c2/transformed/appcompat-resources-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/df5304f7b404f611cb0fb90065cffa2e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/4c7e1423a71dab59c315e8fdb6f0e909/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/1d9ce4e19e29d36ab76696f303de36a7/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/douglastaquary/.gradle/caches/transforms-3/440e462e1dcb2fbcc4b12f95dfaf9f8c/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] /Users/douglastaquary/.gradle/caches/transforms-3/dc5fbef07d4aeb52af29429ae6c166a2/transformed/activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/51194abf9eee37ea332431a04ccc4539/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/ca772bab972d22fbda34a5ba84f854cd/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/9d288a892a4a1e2f18564eee47a4258a/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3bd7f23d07a4cbf3da87d7bdca843194/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3d14cb04a0d6ad218771f503cf86712c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/54a3203a1fb15dd8184c3f0afa4cf30c/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.5.0] /Users/douglastaquary/.gradle/caches/transforms-3/65c6ef624ba1cd37c171a3403facaf19/transformed/core-1.5.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/aeb5f6381ced0a3213da2d9e6810764b/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/46df28579c6ec3253f0348128ed6748f/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/fad90a8608ec3067d284f087f0b2bbb8/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/5b33f1ebdbda64dfee7472b585a89d5f/transformed/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/f87ac7c9fea78d2f5dca9e1bc6f3b9ad/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/douglastaquary/.gradle/caches/transforms-3/07b5ef9f9b5c374a15cdb8909ba42735/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/becf506940c22eaea8a15bd00e5f86a0/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/cd6c2302f54cc64b43336c08a799fb79/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/49b4520ac117f576a524310ef1db4984/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/d3025a775f5406bff393ab37988028a6/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/249d1168d4be8f8f242d8fff41e57217/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/8a6b4987b8a0dc48e43430720564c8a2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/e4cb81bedb18b59aabe4f2d6ab93f33e/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/50a750d3d2e5177d7bc106f98e0e1022/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/a2782cbf095a9165a0ddee71a2757188/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:2:1-18:12
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:2:1-18:12
 	package
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:70-120
-		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:3:5-52
+		INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
-		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:2:1-18:12
+		INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:1-23:12
-		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:2:1-18:12
+		INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:2:11-69
-uses-permission#android.permission.INTERNET
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:4:5-67
-	android:name
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:6:5-22:19
-MERGED from [io.insert-koin:koin-android:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/92dd04e330354dd84d4d0766c9aa9438/transformed/koin-android-3.0.1-beta-1/AndroidManifest.xml:7:5-20
-MERGED from [io.insert-koin:koin-android:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/92dd04e330354dd84d4d0766c9aa9438/transformed/koin-android-3.0.1-beta-1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.material:material:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/5b22e919035188c8a67a2dfb44ec1c22/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/5b22e919035188c8a67a2dfb44ec1c22/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/douglastaquary/.gradle/caches/transforms-3/28239a7c58a30f07fc69dda778cd2982/transformed/constraintlayout-2.0.2/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/douglastaquary/.gradle/caches/transforms-3/28239a7c58a30f07fc69dda778cd2982/transformed/constraintlayout-2.0.2/AndroidManifest.xml:9:5-20
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/c4c5f40ef024a8fa66cc5f091d8fe6c8/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/c4c5f40ef024a8fa66cc5f091d8fe6c8/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.compose.ui:ui-tooling:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6444f82d733c908403e184b50ae94bb8/transformed/ui-tooling-1.0.0-beta02/AndroidManifest.xml:24:5-28:19
-MERGED from [androidx.compose.ui:ui-tooling:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6444f82d733c908403e184b50ae94bb8/transformed/ui-tooling-1.0.0-beta02/AndroidManifest.xml:24:5-28:19
-MERGED from [androidx.compose.ui:ui-tooling-data:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/f2ae053c6871f6ffce2518222a226b07/transformed/ui-tooling-data-1.0.0-beta02/AndroidManifest.xml:24:5-26:19
-MERGED from [androidx.compose.ui:ui-tooling-data:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/f2ae053c6871f6ffce2518222a226b07/transformed/ui-tooling-data-1.0.0-beta02/AndroidManifest.xml:24:5-26:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
-MERGED from [androidx.core:core:1.5.0-beta01] /Users/douglastaquary/.gradle/caches/transforms-3/604e7d3d1368c2cf27eb91e399c024a5/transformed/core-1.5.0-beta01/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.5.0-beta01] /Users/douglastaquary/.gradle/caches/transforms-3/604e7d3d1368c2cf27eb91e399c024a5/transformed/core-1.5.0-beta01/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/1a24007cc51747d40709740550f80b8f/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/1a24007cc51747d40709740550f80b8f/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:5:5-17:19
+MERGED from [com.google.android.material:material:1.4.0] /Users/douglastaquary/.gradle/caches/transforms-3/11e60734eb9147790823e2168d9edf26/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.4.0] /Users/douglastaquary/.gradle/caches/transforms-3/11e60734eb9147790823e2168d9edf26/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/e341e4e6d3f1536496af6b719a526f00/transformed/constraintlayout-2.1.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/e341e4e6d3f1536496af6b719a526f00/transformed/constraintlayout-2.1.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.5.0] /Users/douglastaquary/.gradle/caches/transforms-3/65c6ef624ba1cd37c171a3403facaf19/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] /Users/douglastaquary/.gradle/caches/transforms-3/65c6ef624ba1cd37c171a3403facaf19/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/douglastaquary/.gradle/caches/transforms-3/07b5ef9f9b5c374a15cdb8909ba42735/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/douglastaquary/.gradle/caches/transforms-3/07b5ef9f9b5c374a15cdb8909ba42735/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.5.0-beta01] /Users/douglastaquary/.gradle/caches/transforms-3/604e7d3d1368c2cf27eb91e399c024a5/transformed/core-1.5.0-beta01/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.5.0] /Users/douglastaquary/.gradle/caches/transforms-3/65c6ef624ba1cd37c171a3403facaf19/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:10:13-39
-	android:label
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:8:13-45
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:7:9-35
 	android:allowBackup
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:9:13-40
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:6:9-36
 	android:theme
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:12:13-52
-	android:usesCleartextTraffic
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:11:13-48
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:8:9-40
+activity#com.douglastaquary.busaoshare.android.MainActivity
+ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:9:9-16:20
+	android:exported
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:11:13-36
 	android:name
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:7:13-48
-activity#com.douglastaquary.busaoshare.androidApp.MainActivity
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:13:9-21:20
-	android:label
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:15:13-45
-	android:theme
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:16:13-64
-	android:name
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:14:13-41
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:10:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:17:13-20:29
+ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:12:13-15:29
 action#android.intent.action.MAIN
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:18:17-68
+ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:13:17-69
 	android:name
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:13:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:19:17-76
+ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:14:17-77
 	android:name
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:14:27-74
 uses-sdk
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-MERGED from [:shared] /Users/douglastaquary/Documents/Projects/Github/BusaoShare/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:shared] /Users/douglastaquary/Documents/Projects/Github/BusaoShare/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [io.insert-koin:koin-androidx-compose:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/bb5d9266a329b95224a900ac41a51e8a/transformed/koin-androidx-compose-3.0.1-beta-1/AndroidManifest.xml:5:5-44
-MERGED from [io.insert-koin:koin-androidx-compose:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/bb5d9266a329b95224a900ac41a51e8a/transformed/koin-androidx-compose-3.0.1-beta-1/AndroidManifest.xml:5:5-44
-MERGED from [io.insert-koin:koin-android:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/92dd04e330354dd84d4d0766c9aa9438/transformed/koin-android-3.0.1-beta-1/AndroidManifest.xml:5:5-44
-MERGED from [io.insert-koin:koin-android:3.0.1-beta-1] /Users/douglastaquary/.gradle/caches/transforms-3/92dd04e330354dd84d4d0766c9aa9438/transformed/koin-android-3.0.1-beta-1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.material:material:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/5b22e919035188c8a67a2dfb44ec1c22/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/5b22e919035188c8a67a2dfb44ec1c22/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/douglastaquary/.gradle/caches/transforms-3/28239a7c58a30f07fc69dda778cd2982/transformed/constraintlayout-2.0.2/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] /Users/douglastaquary/.gradle/caches/transforms-3/28239a7c58a30f07fc69dda778cd2982/transformed/constraintlayout-2.0.2/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/bfe29f4991957b9ff90f87df8183d3cc/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/bfe29f4991957b9ff90f87df8183d3cc/transformed/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/c4c5f40ef024a8fa66cc5f091d8fe6c8/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/c4c5f40ef024a8fa66cc5f091d8fe6c8/transformed/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-compose:1.0.0-alpha09] /Users/douglastaquary/.gradle/caches/transforms-3/8878b72b1f67b271e5fca52214d0cd8e/transformed/navigation-compose-1.0.0-alpha09/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-compose:1.0.0-alpha09] /Users/douglastaquary/.gradle/caches/transforms-3/8878b72b1f67b271e5fca52214d0cd8e/transformed/navigation-compose-1.0.0-alpha09/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha03] /Users/douglastaquary/.gradle/caches/transforms-3/18801654a57a4c7af04470efe7fa7ca2/transformed/lifecycle-viewmodel-compose-1.0.0-alpha03/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha03] /Users/douglastaquary/.gradle/caches/transforms-3/18801654a57a4c7af04470efe7fa7ca2/transformed/lifecycle-viewmodel-compose-1.0.0-alpha03/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/31e302d7b93504ca564bd865966129f1/transformed/navigation-runtime-ktx-2.3.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/31e302d7b93504ca564bd865966129f1/transformed/navigation-runtime-ktx-2.3.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment-ktx:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/2c285619346c96484b98857393b06f97/transformed/fragment-ktx-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment-ktx:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/2c285619346c96484b98857393b06f97/transformed/fragment-ktx-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-tooling:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6444f82d733c908403e184b50ae94bb8/transformed/ui-tooling-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-tooling:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6444f82d733c908403e184b50ae94bb8/transformed/ui-tooling-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-compose:1.3.0-alpha04] /Users/douglastaquary/.gradle/caches/transforms-3/bb36ec1241f0d724a668ccf7af0b5e43/transformed/activity-compose-1.3.0-alpha04/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-compose:1.3.0-alpha04] /Users/douglastaquary/.gradle/caches/transforms-3/bb36ec1241f0d724a668ccf7af0b5e43/transformed/activity-compose-1.3.0-alpha04/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-ktx:1.3.0-alpha04] /Users/douglastaquary/.gradle/caches/transforms-3/41f61cf901056042f5787577cab09677/transformed/activity-ktx-1.3.0-alpha04/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-ktx:1.3.0-alpha04] /Users/douglastaquary/.gradle/caches/transforms-3/41f61cf901056042f5787577cab09677/transformed/activity-ktx-1.3.0-alpha04/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/36b470eb8afbd6fddaf4d717a88dd0ab/transformed/lifecycle-viewmodel-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/36b470eb8afbd6fddaf4d717a88dd0ab/transformed/lifecycle-viewmodel-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/258095f3be33f3ee8334906ad6cce2f5/transformed/lifecycle-livedata-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/258095f3be33f3ee8334906ad6cce2f5/transformed/lifecycle-livedata-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.material:material:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/7828000394e6fcf904ce7e3bf6b2cd29/transformed/material-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.material:material:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/7828000394e6fcf904ce7e3bf6b2cd29/transformed/material-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [dev.chrisbanes.accompanist:accompanist-coil:0.6.2] /Users/douglastaquary/.gradle/caches/transforms-3/789f131b9f0368ffcc90f0cfc4d7d2ec/transformed/accompanist-coil-0.6.2/AndroidManifest.xml:20:5-44
-MERGED from [dev.chrisbanes.accompanist:accompanist-coil:0.6.2] /Users/douglastaquary/.gradle/caches/transforms-3/789f131b9f0368ffcc90f0cfc4d7d2ec/transformed/accompanist-coil-0.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.material:material-ripple:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/fe576972785eda7823315f147740142d/transformed/material-ripple-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.material:material-ripple:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/fe576972785eda7823315f147740142d/transformed/material-ripple-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [dev.chrisbanes.accompanist:accompanist-imageloading-core:0.6.2] /Users/douglastaquary/.gradle/caches/transforms-3/e6eb7fbc3d092199b5c18135b3c0c9e4/transformed/accompanist-imageloading-core-0.6.2/AndroidManifest.xml:20:5-44
-MERGED from [dev.chrisbanes.accompanist:accompanist-imageloading-core:0.6.2] /Users/douglastaquary/.gradle/caches/transforms-3/e6eb7fbc3d092199b5c18135b3c0c9e4/transformed/accompanist-imageloading-core-0.6.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.foundation:foundation:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/fd5d7246ea4984970f8531d263a00e24/transformed/foundation-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.foundation:foundation:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/fd5d7246ea4984970f8531d263a00e24/transformed/foundation-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.animation:animation:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/fedd13e08aafdd7e4bace3b482b7e7c7/transformed/animation-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.animation:animation:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/fedd13e08aafdd7e4bace3b482b7e7c7/transformed/animation-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.foundation:foundation-layout:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6170d393a07e63952c6f7e1943577c77/transformed/foundation-layout-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.foundation:foundation-layout:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6170d393a07e63952c6f7e1943577c77/transformed/foundation-layout-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.runtime:runtime-livedata:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/2689bd6fd6ca1ab2b73da60184eb2ab9/transformed/runtime-livedata-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.runtime:runtime-livedata:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/2689bd6fd6ca1ab2b73da60184eb2ab9/transformed/runtime-livedata-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-tooling-data:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/f2ae053c6871f6ffce2518222a226b07/transformed/ui-tooling-data-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-tooling-data:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/f2ae053c6871f6ffce2518222a226b07/transformed/ui-tooling-data-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.material:material-icons-core:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/2e1c9e7e5db959828676dd037932c1fe/transformed/material-icons-core-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.material:material-icons-core:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/2e1c9e7e5db959828676dd037932c1fe/transformed/material-icons-core-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/b00d8dff7f8d881443528b9dfe57c340/transformed/ui-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/b00d8dff7f8d881443528b9dfe57c340/transformed/ui-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-text:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/7d9456e25e931ffcbe6e8c1b0fc7b2c9/transformed/ui-text-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-text:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/7d9456e25e931ffcbe6e8c1b0fc7b2c9/transformed/ui-text-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-graphics:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/92f6ff97eec9ae02f54b522a808bbb9f/transformed/ui-graphics-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-graphics:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/92f6ff97eec9ae02f54b522a808bbb9f/transformed/ui-graphics-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.animation:animation-core:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/5f332de83be229ca80f398c599019f39/transformed/animation-core-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.animation:animation-core:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/5f332de83be229ca80f398c599019f39/transformed/animation-core-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.runtime:runtime-saveable:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/8a508df3c9b0d7db5e557eb5e6c32581/transformed/runtime-saveable-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.runtime:runtime-saveable:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/8a508df3c9b0d7db5e557eb5e6c32581/transformed/runtime-saveable-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-unit:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/d1c764fd5afa77f41e1b4ddda75aeb32/transformed/ui-unit-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-unit:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/d1c764fd5afa77f41e1b4ddda75aeb32/transformed/ui-unit-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-geometry:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/8ad17026fb0c3178df3c32b6cfad5b66/transformed/ui-geometry-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-geometry:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/8ad17026fb0c3178df3c32b6cfad5b66/transformed/ui-geometry-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-util:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/4899a256369c7d42e553b431bfa7a3c5/transformed/ui-util-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.ui:ui-util:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/4899a256369c7d42e553b431bfa7a3c5/transformed/ui-util-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.runtime:runtime:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/5cccd498d2ac32581625c0998d737739/transformed/runtime-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.compose.runtime:runtime:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/5cccd498d2ac32581625c0998d737739/transformed/runtime-1.0.0-beta02/AndroidManifest.xml:20:5-22:41
-MERGED from [io.coil-kt:coil:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/0f84808e91d538c3dd2caefe987930e3/transformed/coil-1.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [io.coil-kt:coil:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/0f84808e91d538c3dd2caefe987930e3/transformed/coil-1.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [io.coil-kt:coil-base:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/d7d785e000930835dcee238e9f530d24/transformed/coil-base-1.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [io.coil-kt:coil-base:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/d7d785e000930835dcee238e9f530d24/transformed/coil-base-1.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/35c5011fa62d867e0247417609375977/transformed/lifecycle-runtime-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/35c5011fa62d867e0247417609375977/transformed/lifecycle-runtime-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/1698455fe521c46b95eeb1dab0dd0073/transformed/lifecycle-livedata-core-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/1698455fe521c46b95eeb1dab0dd0073/transformed/lifecycle-livedata-core-ktx-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [co.touchlab:kermit-android-debug:0.1.8] /Users/douglastaquary/.gradle/caches/transforms-3/0f1eda9f053ca0a8f92f1f2a839686a6/transformed/kermit-debug/AndroidManifest.xml:14:5-44
-MERGED from [co.touchlab:kermit-android-debug:0.1.8] /Users/douglastaquary/.gradle/caches/transforms-3/0f1eda9f053ca0a8f92f1f2a839686a6/transformed/kermit-debug/AndroidManifest.xml:14:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/d501eba11edab2cdad6a169ceb01c28e/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/d501eba11edab2cdad6a169ceb01c28e/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common-ktx:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/af7201fd509fa22bfcf2d60cbc64f75c/transformed/navigation-common-ktx-2.3.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common-ktx:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/af7201fd509fa22bfcf2d60cbc64f75c/transformed/navigation-common-ktx-2.3.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-ktx:1.3.2] /Users/douglastaquary/.gradle/caches/transforms-3/ab3a66004e1531cd43024cadc9c17f84/transformed/core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.core:core-ktx:1.3.2] /Users/douglastaquary/.gradle/caches/transforms-3/ab3a66004e1531cd43024cadc9c17f84/transformed/core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/926daafae0166456a93b95413272eae2/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/926daafae0166456a93b95413272eae2/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/afdfeb6646d6096c8b0a3f55e41badda/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/afdfeb6646d6096c8b0a3f55e41badda/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/0deec4fe4adf555d5a5ba538d56bd056/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/0deec4fe4adf555d5a5ba538d56bd056/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/cf210693864b956dcc34297bbf3380d3/transformed/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/cf210693864b956dcc34297bbf3380d3/transformed/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/adcdd7d0c3fd777e75af0607575f3aef/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/adcdd7d0c3fd777e75af0607575f3aef/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/16bdab87972c94ef997a73fa23dfb805/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/16bdab87972c94ef997a73fa23dfb805/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/0b87f4b8acf855cba288195971c05059/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/0b87f4b8acf855cba288195971c05059/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/6184c623808c2fbe1aee0a664792ed0c/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/6184c623808c2fbe1aee0a664792ed0c/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/f35449f5e81ef1186899078ce788eb57/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/f35449f5e81ef1186899078ce788eb57/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/bbbd248ef7678b38c3cbb539f186923e/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/bbbd248ef7678b38c3cbb539f186923e/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/ada1e30c7389f918b87773f73051a1f5/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/ada1e30c7389f918b87773f73051a1f5/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/bf3a6ae7e2d3a47b8c25b0c963ebcb93/transformed/fragment-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/bf3a6ae7e2d3a47b8c25b0c963ebcb93/transformed/fragment-1.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.loader:loader:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/81e76f7ab989ae9be173fce71036c33b/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/81e76f7ab989ae9be173fce71036c33b/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/0bff13b0c10728b356d216a5d160a110/transformed/lifecycle-livedata-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/0bff13b0c10728b356d216a5d160a110/transformed/lifecycle-livedata-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/6d4516f134f99abe26b210c428064beb/transformed/lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/6d4516f134f99abe26b210c428064beb/transformed/lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.autofill:autofill:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/f16ab4316783ed5d38da0754366c7a6e/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.autofill:autofill:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/f16ab4316783ed5d38da0754366c7a6e/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/265a3ee69dc0cef8a294987e10a6446b/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/265a3ee69dc0cef8a294987e10a6446b/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/fada5f214481808bbfeead9eaebac490/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/fada5f214481808bbfeead9eaebac490/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/ae8f6700599ab908ce089fb5e5dea033/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/ae8f6700599ab908ce089fb5e5dea033/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/7083ff92e14b389cde309bf8a81b1562/transformed/navigation-runtime-2.3.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/7083ff92e14b389cde309bf8a81b1562/transformed/navigation-runtime-2.3.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.3.0-alpha04] /Users/douglastaquary/.gradle/caches/transforms-3/ddb0f898c3ff3f250efdc3f439377235/transformed/activity-1.3.0-alpha04/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.3.0-alpha04] /Users/douglastaquary/.gradle/caches/transforms-3/ddb0f898c3ff3f250efdc3f439377235/transformed/activity-1.3.0-alpha04/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/206db6e026eb321fe2fbb1f5153ac68b/transformed/navigation-common-2.3.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.3.4] /Users/douglastaquary/.gradle/caches/transforms-3/206db6e026eb321fe2fbb1f5153ac68b/transformed/navigation-common-2.3.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.5.0-beta01] /Users/douglastaquary/.gradle/caches/transforms-3/604e7d3d1368c2cf27eb91e399c024a5/transformed/core-1.5.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.5.0-beta01] /Users/douglastaquary/.gradle/caches/transforms-3/604e7d3d1368c2cf27eb91e399c024a5/transformed/core-1.5.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/81abc761e6c29f7a2d33e3da4cd5df73/transformed/lifecycle-runtime-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/81abc761e6c29f7a2d33e3da4cd5df73/transformed/lifecycle-runtime-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/33f858d2813fdd3816316bd265d7f036/transformed/lifecycle-viewmodel-savedstate-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/33f858d2813fdd3816316bd265d7f036/transformed/lifecycle-viewmodel-savedstate-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/e8e37f855473fcfbaa491691bd45cef3/transformed/lifecycle-livedata-core-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/e8e37f855473fcfbaa491691bd45cef3/transformed/lifecycle-livedata-core-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/5cba5a86ee5328946ad51f5564f83eef/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/5cba5a86ee5328946ad51f5564f83eef/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/07e3c214358e028ec91c440e6347d4b3/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/07e3c214358e028ec91c440e6347d4b3/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/45a9d4ed627daa58105bdc7421fbda07/transformed/lifecycle-viewmodel-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.0] /Users/douglastaquary/.gradle/caches/transforms-3/45a9d4ed627daa58105bdc7421fbda07/transformed/lifecycle-viewmodel-2.3.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/1a24007cc51747d40709740550f80b8f/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/1a24007cc51747d40709740550f80b8f/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/afc28cf2a5b3d1db7c07bd851bedf34c/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/afc28cf2a5b3d1db7c07bd851bedf34c/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/e3ccf0141338ffac9245b9760f6943f9/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/e3ccf0141338ffac9245b9760f6943f9/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/67e156411f42e81bc81414436e3bd8ee/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/67e156411f42e81bc81414436e3bd8ee/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3c2490ea441c69b3bb127d531ebaf3c1/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3c2490ea441c69b3bb127d531ebaf3c1/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/e629a5dc172160cb68a0c66150745450/transformed/exifinterface-1.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/e629a5dc172160cb68a0c66150745450/transformed/exifinterface-1.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/fd29d1bfd9991ccc9c82776f43ba7e25/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/fd29d1bfd9991ccc9c82776f43ba7e25/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/9001e451f0a82d0e11924eba8813585d/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/9001e451f0a82d0e11924eba8813585d/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
+MERGED from [:common] /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/common/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:common] /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/common/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.material:material:1.4.0] /Users/douglastaquary/.gradle/caches/transforms-3/11e60734eb9147790823e2168d9edf26/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.4.0] /Users/douglastaquary/.gradle/caches/transforms-3/11e60734eb9147790823e2168d9edf26/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/e341e4e6d3f1536496af6b719a526f00/transformed/constraintlayout-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/e341e4e6d3f1536496af6b719a526f00/transformed/constraintlayout-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/12cd44b09c9f99bc2438250908771395/transformed/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/12cd44b09c9f99bc2438250908771395/transformed/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/df04eee4d7f72d19e396ab0f81130682/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/df04eee4d7f72d19e396ab0f81130682/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/e8dae4c7537666cfbf9a6c6de018b3ac/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/e8dae4c7537666cfbf9a6c6de018b3ac/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3834e51e4c835c73f0879a5ce36098d5/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3834e51e4c835c73f0879a5ce36098d5/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/a9d601cae1d5ee7ae2a15be7940fbdcf/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/a9d601cae1d5ee7ae2a15be7940fbdcf/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/849ec26641c1e91d5bc2ab127872c8c2/transformed/appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/849ec26641c1e91d5bc2ab127872c8c2/transformed/appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/df5304f7b404f611cb0fb90065cffa2e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/df5304f7b404f611cb0fb90065cffa2e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/4c7e1423a71dab59c315e8fdb6f0e909/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/4c7e1423a71dab59c315e8fdb6f0e909/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/1d9ce4e19e29d36ab76696f303de36a7/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/1d9ce4e19e29d36ab76696f303de36a7/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/douglastaquary/.gradle/caches/transforms-3/440e462e1dcb2fbcc4b12f95dfaf9f8c/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/douglastaquary/.gradle/caches/transforms-3/440e462e1dcb2fbcc4b12f95dfaf9f8c/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/douglastaquary/.gradle/caches/transforms-3/dc5fbef07d4aeb52af29429ae6c166a2/transformed/activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/douglastaquary/.gradle/caches/transforms-3/dc5fbef07d4aeb52af29429ae6c166a2/transformed/activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/51194abf9eee37ea332431a04ccc4539/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/51194abf9eee37ea332431a04ccc4539/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/ca772bab972d22fbda34a5ba84f854cd/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/ca772bab972d22fbda34a5ba84f854cd/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/9d288a892a4a1e2f18564eee47a4258a/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/9d288a892a4a1e2f18564eee47a4258a/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3bd7f23d07a4cbf3da87d7bdca843194/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3bd7f23d07a4cbf3da87d7bdca843194/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3d14cb04a0d6ad218771f503cf86712c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/3d14cb04a0d6ad218771f503cf86712c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/54a3203a1fb15dd8184c3f0afa4cf30c/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/54a3203a1fb15dd8184c3f0afa4cf30c/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.5.0] /Users/douglastaquary/.gradle/caches/transforms-3/65c6ef624ba1cd37c171a3403facaf19/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] /Users/douglastaquary/.gradle/caches/transforms-3/65c6ef624ba1cd37c171a3403facaf19/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/aeb5f6381ced0a3213da2d9e6810764b/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/aeb5f6381ced0a3213da2d9e6810764b/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/46df28579c6ec3253f0348128ed6748f/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/46df28579c6ec3253f0348128ed6748f/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/fad90a8608ec3067d284f087f0b2bbb8/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/fad90a8608ec3067d284f087f0b2bbb8/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/5b33f1ebdbda64dfee7472b585a89d5f/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/5b33f1ebdbda64dfee7472b585a89d5f/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/f87ac7c9fea78d2f5dca9e1bc6f3b9ad/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/f87ac7c9fea78d2f5dca9e1bc6f3b9ad/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/douglastaquary/.gradle/caches/transforms-3/07b5ef9f9b5c374a15cdb8909ba42735/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/douglastaquary/.gradle/caches/transforms-3/07b5ef9f9b5c374a15cdb8909ba42735/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/becf506940c22eaea8a15bd00e5f86a0/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/becf506940c22eaea8a15bd00e5f86a0/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/cd6c2302f54cc64b43336c08a799fb79/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/douglastaquary/.gradle/caches/transforms-3/cd6c2302f54cc64b43336c08a799fb79/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/49b4520ac117f576a524310ef1db4984/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/douglastaquary/.gradle/caches/transforms-3/49b4520ac117f576a524310ef1db4984/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/d3025a775f5406bff393ab37988028a6/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/d3025a775f5406bff393ab37988028a6/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/249d1168d4be8f8f242d8fff41e57217/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/249d1168d4be8f8f242d8fff41e57217/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/8a6b4987b8a0dc48e43430720564c8a2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/8a6b4987b8a0dc48e43430720564c8a2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/e4cb81bedb18b59aabe4f2d6ab93f33e/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/e4cb81bedb18b59aabe4f2d6ab93f33e/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/50a750d3d2e5177d7bc106f98e0e1022/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/50a750d3d2e5177d7bc106f98e0e1022/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/a2782cbf095a9165a0ddee71a2757188/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/douglastaquary/.gradle/caches/transforms-3/a2782cbf095a9165a0ddee71a2757188/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
+INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-		ADDED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-		INJECTED from /Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-activity#androidx.compose.ui.tooling.preview.PreviewActivity
-ADDED from [androidx.compose.ui:ui-tooling:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6444f82d733c908403e184b50ae94bb8/transformed/ui-tooling-1.0.0-beta02/AndroidManifest.xml:25:9-27:39
-	android:exported
-		ADDED from [androidx.compose.ui:ui-tooling:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6444f82d733c908403e184b50ae94bb8/transformed/ui-tooling-1.0.0-beta02/AndroidManifest.xml:27:13-36
-	android:name
-		ADDED from [androidx.compose.ui:ui-tooling:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6444f82d733c908403e184b50ae94bb8/transformed/ui-tooling-1.0.0-beta02/AndroidManifest.xml:26:13-79
-activity#androidx.compose.ui.tooling.data.TestActivity
-ADDED from [androidx.compose.ui:ui-tooling-data:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/f2ae053c6871f6ffce2518222a226b07/transformed/ui-tooling-data-1.0.0-beta02/AndroidManifest.xml:25:9-82
-	android:name
-		ADDED from [androidx.compose.ui:ui-tooling-data:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/f2ae053c6871f6ffce2518222a226b07/transformed/ui-tooling-data-1.0.0-beta02/AndroidManifest.xml:25:19-79
-provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-	android:multiprocess
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+		INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
+		INJECTED from /Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml

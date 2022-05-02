@@ -1,2 +1,0 @@
-com/douglastaquary/busaoshare/shared/BuildConfig.java
- com.douglastaquary.busaoshare.shared.BuildConfig

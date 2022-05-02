@@ -1,76 +1,44 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.douglastaquary.busaoshare.androidApp"
+3    package="com.douglastaquary.busaoshare.android"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
-9        android:targetSdkVersion="29" />
-9-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml
+8-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:4:5-67
-11-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:4:22-64
-12
-13    <application
-13-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:6:5-22:19
-14        android:name="com.douglastaquary.busaoshare.androidApp.BusShareApplication"
-14-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:7:13-48
-15        android:allowBackup="false"
-15-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:9:13-40
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.5.0-beta01] /Users/douglastaquary/.gradle/caches/transforms-3/604e7d3d1368c2cf27eb91e399c024a5/transformed/core-1.5.0-beta01/AndroidManifest.xml:24:18-86
-17        android:debuggable="true"
-18        android:label="@string/app_name"
-18-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:8:13-45
-19        android:supportsRtl="true"
-19-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:10:13-39
-20        android:testOnly="true"
-21        android:theme="@style/Theme.BusaoShare"
-21-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:12:13-52
-22        android:usesCleartextTraffic="true" >
-22-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:11:13-48
-23        <activity
-23-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:13:9-21:20
-24            android:name="com.douglastaquary.busaoshare.androidApp.MainActivity"
-24-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:14:13-41
-25            android:label="@string/app_name"
-25-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:15:13-45
-26            android:theme="@style/Theme.BusaoShare.NoActionBar" >
-26-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:16:13-64
-27            <intent-filter>
-27-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:17:13-20:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:18:17-68
-28-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:18:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:19:17-76
-30-->/Users/douglastaquary/Documents/Projects/Github/BusaoShare/androidApp/src/main/AndroidManifest.xml:19:27-74
-31            </intent-filter>
-32        </activity>
-33        <activity
-33-->[androidx.compose.ui:ui-tooling:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6444f82d733c908403e184b50ae94bb8/transformed/ui-tooling-1.0.0-beta02/AndroidManifest.xml:25:9-27:39
-34            android:name="androidx.compose.ui.tooling.preview.PreviewActivity"
-34-->[androidx.compose.ui:ui-tooling:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6444f82d733c908403e184b50ae94bb8/transformed/ui-tooling-1.0.0-beta02/AndroidManifest.xml:26:13-79
-35            android:exported="true" />
-35-->[androidx.compose.ui:ui-tooling:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/6444f82d733c908403e184b50ae94bb8/transformed/ui-tooling-1.0.0-beta02/AndroidManifest.xml:27:13-36
-36        <activity android:name="androidx.compose.ui.tooling.data.TestActivity" />
-36-->[androidx.compose.ui:ui-tooling-data:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/f2ae053c6871f6ffce2518222a226b07/transformed/ui-tooling-data-1.0.0-beta02/AndroidManifest.xml:25:9-82
-36-->[androidx.compose.ui:ui-tooling-data:1.0.0-beta02] /Users/douglastaquary/.gradle/caches/transforms-3/f2ae053c6871f6ffce2518222a226b07/transformed/ui-tooling-data-1.0.0-beta02/AndroidManifest.xml:25:19-79
-37
-38        <provider
-38-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-39            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-39-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-40            android:authorities="com.douglastaquary.busaoshare.androidApp.lifecycle-process"
-40-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-41            android:exported="false"
-41-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-42            android:multiprocess="true" />
-42-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/douglastaquary/.gradle/caches/transforms-3/b129138fd3846aada8a9933c98e2270c/transformed/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-43    </application>
-44
-45</manifest>
+11    <application
+11-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:5:5-17:19
+12        android:allowBackup="false"
+12-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:6:9-36
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.5.0] /Users/douglastaquary/.gradle/caches/transforms-3/65c6ef624ba1cd37c171a3403facaf19/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:supportsRtl="true"
+15-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:7:9-35
+16        android:testOnly="true"
+17        android:theme="@style/AppTheme" >
+17-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:8:9-40
+18        <activity
+18-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:9:9-16:20
+19            android:name="com.douglastaquary.busaoshare.android.MainActivity"
+19-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:10:13-41
+20            android:exported="true" >
+20-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:11:13-36
+21            <intent-filter>
+21-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:12:13-15:29
+22                <action android:name="android.intent.action.MAIN" />
+22-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:13:17-69
+22-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:13:25-66
+23
+24                <category android:name="android.intent.category.LAUNCHER" />
+24-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:14:17-77
+24-->/Users/douglastaquary/Documents/Projects/Github/Kotlin Multiplataform/androidApp/src/main/AndroidManifest.xml:14:27-74
+25            </intent-filter>
+26        </activity>
+27    </application>
+28
+29</manifest>
