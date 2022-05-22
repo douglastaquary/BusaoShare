@@ -5,11 +5,12 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Trip (
-    @SerialName("cl") val tripId: Int,
+    @SerialName("cl") val id: Int,
     @SerialName("lc") val withoutSecondaryTerminal: Boolean,
     @SerialName("lt") val firstPartOfTheSign: String,
     @SerialName("tl") val secondPartOfTheSign: Int,
     @SerialName("sl") val travelDestination: Int,
     @SerialName("tp") val mainTerminal: String,
     @SerialName("ts") val secondaryTerminal: String,
+    var tripId: String = id.toString()
 )

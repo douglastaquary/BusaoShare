@@ -10,6 +10,13 @@ plugins {
 
 version = "1.0"
 
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions {
+        jvmTarget = "1.8"
+        freeCompilerArgs = listOf("-Xuse-experimental=kotlin.time.ExperimentalTime", "-Xobjc-generics")
+    }
+}
+
 kotlin {
     android()
     iosX64()
@@ -51,10 +58,12 @@ kotlin {
                     api(core)
                     api(test)
                 }
-
+                // kermit
                 with(Deps.Log) {
                     api(kermit)
                 }
+
+                api(Deps.multiplatformSettings)
             }
         }
 
@@ -65,6 +74,7 @@ kotlin {
         }
         val androidMain by getting
         val androidTest by getting
+
         val iosX64Main by getting
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
@@ -73,6 +83,9 @@ kotlin {
             iosX64Main.dependsOn(this)
             iosArm64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
+            dependencies {
+                implementation("io.ktor:ktor-client-ios:${Versions.ktor}")
+            }
         }
         val iosX64Test by getting
         val iosArm64Test by getting
@@ -114,9 +127,9 @@ object Versions {
     const val kotlinCoroutines = "1.6.1"
     const val ktor = "2.0.0"
     const val kotlinxSerialization = "1.3.1"
-    const val koin = "3.1.6"
+    const val koin = "3.2.0"
     const val lifecycle = "2.2.0-alpha01"
-
+    const val multiplatformSettings = "0.8.1"
     const val kmpNativeCoroutinesVersion = "0.12.1-new-mm"
 
     const val compose = "1.2.0-alpha08"
@@ -164,4 +177,6 @@ object Deps {
         const val slf4j = "org.slf4j:slf4j-simple:${Versions.slf4j}"
         const val kermit = "co.touchlab:kermit:${Versions.kermit}"
     }
+
+    const val multiplatformSettings = "com.russhwolf:multiplatform-settings:${Versions.multiplatformSettings}"
 }
