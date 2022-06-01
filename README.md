@@ -9,7 +9,7 @@ Note that, due to use of Jetpack Compose, Android Studio Arctic Fox and is requi
 Minimum of XCode 13.2 beta is required for iOS project as it now uses Swift 5.5 concurrency capabilities. When opening iOS and macOS projects remember to open `.xcworkspace` file (and not `.xcodeproj` one)
 
 
-### iOS App
+### SwiftUI iOS App
 <a href=""><img src ="images/busaoshare_screenshots.png"></a>
 
-### Android App
+### Jetpack Compose Android App

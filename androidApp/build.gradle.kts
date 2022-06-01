@@ -55,7 +55,6 @@ dependencies {
     with(Deps.Koin) {
         implementation(core)
         implementation(android)
-        implementation(compose)
     }
 
     testImplementation("junit:junit:4.13.2")
@@ -69,7 +68,7 @@ object Versions {
     const val kotlinCoroutines = "1.6.1"
     const val ktor = "2.0.0"
     const val kotlinxSerialization = "1.3.1"
-    const val koin = "3.1.6"
+    const val koin = "3.2.0"
     const val lifecycle = "2.2.0-alpha01"
 
     const val kmpNativeCoroutinesVersion = "0.12.1-new-mm"

@@ -1,20 +1,97 @@
 package com.douglastaquary.busaoshare.android
 
-import androidx.appcompat.app.AppCompatActivity
+import android.annotation.SuppressLint
 import android.os.Bundle
-import com.douglastaquary.busaoshare.model.Greeting
-import android.widget.TextView
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.material.BottomNavigation
+import androidx.compose.material.BottomNavigationItem
+import androidx.compose.material.Icon
+import androidx.compose.material.Text
+import androidx.compose.runtime.*
+import androidx.compose.ui.text.input.TextFieldValue
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.currentBackStackEntryAsState
+import androidx.navigation.compose.rememberNavController
+import com.douglastaquary.busaoshare.android.ui.screens.LandingScreen
+import com.douglastaquary.busaoshare.android.ui.screens.Screens
+import com.douglastaquary.busaoshare.android.ui.screens.SearchView
+import com.douglastaquary.busaoshare.android.ui.screens.TripListScreen
+import com.douglastaquary.busaoshare.android.ui.theme.BusShareTheme
+import com.douglastaquary.busaoshare.android.ui.viewModels.SearchTripViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
-fun greet(): String {
-    return Greeting().greeting()
-}
+@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)
+class MainActivity : ComponentActivity() {
+    private val tripListViewModel by viewModel<SearchTripViewModel>()
 
-class MainActivity : AppCompatActivity() {
+    @OptIn(ExperimentalComposeApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val tv: TextView = findViewById(R.id.text_view)
-        tv.text = greet()
+        setContent {
+            BusShareTheme {
+                var showLandingScreen by remember { mutableStateOf(true) }
+                if (showLandingScreen) {
+                    LandingScreen(tripListViewModel, onTimeout = { showLandingScreen = false })
+                } else {
+                    MainLayout(tripListViewModel)
+                }
+            }
+        }
+    }
+}
+
+@SuppressLint("MissingPermission", "UnusedMaterialScaffoldPaddingParameter")
+@Composable
+fun MainLayout(viewModel: SearchTripViewModel) {
+    val navController = rememberNavController()
+    val bottomNavigationItems = listOf(Screens.SearchTripScreen)
+    val bottomBar: @Composable () -> Unit = { BusaoShareBottomNavigation(navController, bottomNavigationItems) }
+    val textState = remember { mutableStateOf(TextFieldValue("")) }
+
+    NavHost(navController, startDestination = Screens.SearchTripScreen.route) {
+        composable(Screens.SearchTripScreen.route) {
+            Column {
+                SearchView(textState)
+                TripListScreen(viewModel, navController)
+            }
+
+        }
+//        composable(Screens.BusRouteScreen.route+ "/{busId}") { backStackEntry ->
+//            BusRouteScreen(viewModel,
+//                backStackEntry.arguments?.get("busId") as String,
+//                popBack = { navController.popBackStack() })
+//        }
+    }
+}
+
+
+@Composable
+private fun BusaoShareBottomNavigation(navController: NavHostController, items: List<Screens>) {
+
+    BottomNavigation {
+        val navBackStackEntry by navController.currentBackStackEntryAsState()
+        val currentRoute = navBackStackEntry?.destination?.route
+
+
+        items.forEach { screen ->
+            BottomNavigationItem(
+                icon = { screen.icon?.let { Icon(it, contentDescription = screen.label) } },
+                label = { Text(screen.label) },
+                selected = currentRoute == screen.route,
+                alwaysShowLabel = false, // This hides the title for the unselected items
+                onClick = {
+                    // This if check gives us a "singleTop" behavior where we do not create a
+                    // second instance of the composable if we are already on that destination
+                    if (currentRoute != screen.route) {
+                        navController.navigate(screen.route)
+                    }
+                }
+            )
+        }
     }
 }

@@ -2,8 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.douglastaquary.busaoshare.android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
-        android:allowBackup="false"
+        android:allowBackup="true"
+        android:name=".BusaoShareApplication"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity

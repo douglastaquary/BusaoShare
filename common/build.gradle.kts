@@ -72,7 +72,11 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
-        val androidMain by getting
+        val androidMain by getting {
+            dependencies {
+                implementation("io.ktor:ktor-client-android:${Versions.ktor}")
+            }
+        }
         val androidTest by getting
 
         val iosX64Main by getting

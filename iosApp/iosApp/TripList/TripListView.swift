@@ -62,11 +62,4 @@ struct TripListView: View {
             }
         }
     }
-    
 }
-
-//struct TripListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        //TripListView()
-//    }
-//}
