@@ -22,8 +22,7 @@ import com.douglastaquary.busaoshare.model.Trip
 
 
 @Composable
-fun TripListView(viewModel: SearchTripViewModel,
-                 tripList: List<Trip>,
+fun TripListView(tripList: List<Trip>,
                  itemClick : (trip : Trip) -> Unit) {
     LazyColumn {
         items(tripList) { trip ->

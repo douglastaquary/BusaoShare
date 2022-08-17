@@ -5,8 +5,11 @@ import co.touchlab.kermit.Logger
 import com.douglastaquary.busaoshare.model.Trip
 import com.douglastaquary.busaoshare.model.Result
 import com.douglastaquary.busaoshare.repository.SPTransAPIRepository
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.launch
 
 sealed class UiState<out T : Any> {
     object Loading : UiState<Nothing>()
@@ -19,19 +22,34 @@ class SearchTripViewModel(
     private val repository: SPTransAPIRepository
     ) : ViewModel() {
 
-    val tripId = MutableStateFlow<String>("")
-    val tripSearchListState = MutableStateFlow<UiState<List<Trip>>>(UiState.Loading)
-    var currentTrip = MutableStateFlow<Trip?>(null)
-    val tripList = currentTrip.filterNotNull().flatMapLatest { searchTrip(it.tripId) }
+//    init {
+//        performAuthenticate()
+//    }
+    private val coroutineScope: CoroutineScope = MainScope()
 
-    private fun searchTrip(tripId: String): Flow<List<Trip>> = flow {
-        emit(emptyList())
-        while (true) {
-            val result = repository.fetchTrips(tripId)
-            if (result is Result.Success) {
-                Logger.d { result.data.toString() }
-                emit(result.data)
-            }
+    val uiState = MutableStateFlow<UiState<List<Trip>>>(UiState.Loading)
+    var currentTripName = MutableStateFlow<String>("")
+    var currentTrip = MutableStateFlow<Trip?>(null)
+    val tripList = currentTrip.filterNotNull().flatMapLatest { repository.fetchTrips("$currentTripName") }
+
+    fun performAuthenticate() {
+        coroutineScope.launch {
+            repository.authenticationRequest()
         }
+    }
+
+//    fun searchTrip(tripId: String): Flow<List<Trip>> = flow {
+//        emit(emptyList())
+//        while (true) {
+//            val result = repository.fetchTrips(tripId)
+//            if (result is Result.Success) {
+//                Logger.d { result.data.toString() }
+//                emit(result.data)
+//            }
+//        }
+//    }
+
+    fun setTripName(tripName: String) {
+        currentTripName.value = tripName
     }
 }
