@@ -37,9 +37,9 @@ android {
 }
 
 dependencies {
-    implementation("com.google.android.material:material:1.5.0")
+    implementation("com.google.android.material:material:1.6.1")
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
-    implementation("androidx.activity:activity-compose:1.4.0")
+    implementation("androidx.activity:activity-compose:1.5.0")
 
     with(Deps.Compose) {
         implementation(ui)
@@ -55,6 +55,7 @@ dependencies {
     with(Deps.Koin) {
         implementation(core)
         implementation(android)
+        implementation(compose)
     }
 
     testImplementation("junit:junit:4.13.2")

@@ -38,16 +38,27 @@ fun TripListScreen(tripName: String, tripSelected: (trip: Trip) -> Unit) {
                 title = { Text("BusaoShare") }
             )
         }) { paddingValues ->
-        tripList?.let {
-            LazyColumn {
-                items(tripList) { trip ->
-                    TripItemView(trip = trip,
-                        tripSelected = tripSelected,
-                    )
+
+        if (tripList.isEmpty()) {
+            coroutineScope.launch {
+////                            //sheetState.show()
+                searchTripViewModel.performAuthenticate()
+                searchTripViewModel.setTripName("interlagos")
+            }
+        } else {
+            tripList?.let {
+                LazyColumn {
+                    items(tripList) { trip ->
+                        TripItemView(
+                            trip = trip,
+                            tripSelected = tripSelected,
+                        )
+                    }
                 }
             }
         }
     }
+}
 
 //    Scaffold(
 //        topBar = {
@@ -114,4 +125,4 @@ fun TripListScreen(tripName: String, tripSelected: (trip: Trip) -> Unit) {
 ////            }
 ////        }
 //    }
-}
+

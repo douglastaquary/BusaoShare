@@ -57,7 +57,7 @@ fun MainLayout(viewModel: SearchTripViewModel) {
         composable(Screens.SearchTripScreen.route) {
             Column {
                 SearchView(textState)
-                TripListScreen(viewModel, navController)
+                TripListScreen(tripName = "", tripSelected = {})
             }
 
         }

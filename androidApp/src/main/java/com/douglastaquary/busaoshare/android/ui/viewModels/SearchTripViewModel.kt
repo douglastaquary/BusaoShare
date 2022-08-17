@@ -22,9 +22,6 @@ class SearchTripViewModel(
     private val repository: SPTransAPIRepository
     ) : ViewModel() {
 
-//    init {
-//        performAuthenticate()
-//    }
     private val coroutineScope: CoroutineScope = MainScope()
 
     val uiState = MutableStateFlow<UiState<List<Trip>>>(UiState.Loading)
@@ -36,6 +33,8 @@ class SearchTripViewModel(
         coroutineScope.launch {
             repository.authenticationRequest()
         }
+
+        //setTripName("interlagos")
     }
 
 //    fun searchTrip(tripId: String): Flow<List<Trip>> = flow {
