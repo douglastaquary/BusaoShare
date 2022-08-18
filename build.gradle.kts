@@ -8,7 +8,6 @@ buildscript {
         classpath("com.android.tools.build:gradle:7.0.4")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.30")
         classpath("org.jetbrains.kotlin:kotlin-serialization:1.5.30")
-        classpath("com.android.tools.build:gradle:7.1.3")
         classpath("com.rickclephas.kmp:kmp-nativecoroutines-gradle-plugin:0.12.1-new-mm")
     }
 }

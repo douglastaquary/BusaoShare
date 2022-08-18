@@ -29,26 +29,19 @@ fun TripListScreen(tripName: String, tripSelected: (trip: Trip) -> Unit) {
     val searchTripViewModel = getViewModel<SearchTripViewModel>()
 
     val snackbarHostState = remember { SnackbarHostState() }
-    val uiState = searchTripViewModel.uiState.collectAsState(UiState.Loading)
-    val tripList by searchTripViewModel.tripList.collectAsState(emptyList())
+    val tripListState = searchTripViewModel.tripListState.collectAsState(UiState.Loading)
+    //val tripList by searchTripViewModel.tripList.collectAsState(emptyList())
 
     Scaffold(
         topBar = {
             TopAppBar(
                 title = { Text("BusaoShare") }
             )
-        }) { paddingValues ->
-
-        if (tripList.isEmpty()) {
-            coroutineScope.launch {
-////                            //sheetState.show()
-                searchTripViewModel.performAuthenticate()
-                searchTripViewModel.setTripName("interlagos")
-            }
-        } else {
-            tripList?.let {
+        }) {
+        when (val uiState = tripListState.value) {
+            is UiState.Success -> {
                 LazyColumn {
-                    items(tripList) { trip ->
+                    items(uiState.data) { trip ->
                         TripItemView(
                             trip = trip,
                             tripSelected = tripSelected,
@@ -57,6 +50,24 @@ fun TripListScreen(tripName: String, tripSelected: (trip: Trip) -> Unit) {
                 }
             }
         }
+//        if (tripList.isNotEmpty()) {
+            coroutineScope.launch {
+////                            //sheetState.show()
+                searchTripViewModel.poolTrips()
+//                searchTripViewModel.setTripName("interlagos")
+            }
+//        } else {
+//            tripList?.let {
+//                LazyColumn {
+//                    items(tripList) { trip ->
+//                        TripItemView(
+//                            trip = trip,
+//                            tripSelected = tripSelected,
+//                        )
+//                    }
+//                }
+//            }
+//        }
     }
 }
 
