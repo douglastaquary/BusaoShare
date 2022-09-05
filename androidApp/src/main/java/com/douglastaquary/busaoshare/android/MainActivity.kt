@@ -2,6 +2,7 @@ package com.douglastaquary.busaoshare.android
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
@@ -48,6 +49,7 @@ class MainActivity : ComponentActivity() {
 @SuppressLint("MissingPermission", "UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun MainLayout(viewModel: SearchTripViewModel) {
+
     val navController = rememberNavController()
     val bottomNavigationItems = listOf(Screens.SearchTripScreen)
     val bottomBar: @Composable () -> Unit = { BusaoShareBottomNavigation(navController, bottomNavigationItems) }
@@ -56,8 +58,10 @@ fun MainLayout(viewModel: SearchTripViewModel) {
     NavHost(navController, startDestination = Screens.SearchTripScreen.route) {
         composable(Screens.SearchTripScreen.route) {
             Column {
-                SearchView(textState)
-                TripListScreen(tripName = "", tripSelected = {})
+                TripListScreen(
+                    tripSelected = {},
+                    onSearch = { "Click on search" }
+                )
             }
 
         }

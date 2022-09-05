@@ -1,10 +1,15 @@
 package com.douglastaquary.busaoshare.remote
 
+import co.touchlab.kermit.Logger
 import com.douglastaquary.busaoshare.model.ArrivalOfVehiclesPerTrip
+import com.douglastaquary.busaoshare.model.Result
 import com.douglastaquary.busaoshare.model.Trip
 import io.ktor.client.HttpClient
 import io.ktor.client.call.*
 import io.ktor.client.request.*
+import io.ktor.client.request.request
+import io.ktor.client.statement.*
+import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 
 class SPTransAPI(
@@ -24,6 +29,7 @@ class SPTransAPI(
         return client.get {
             url("$baseUrl/Linha/Buscar")
             parameter("termosBusca", "$searchText")
+            Logger.a("Requesting fetchTrips - params: $searchText ")
         }.body()
     }
 
@@ -35,6 +41,6 @@ class SPTransAPI(
     }
 
     companion object {
-        private const val API_TOKEN = "f89300e7615320c82cb1d9911d26c3dba054338ba9c39059bc2d9a414091ece8"
+        private const val API_TOKEN = "3fea87313d3ab87ec1862fd941a69ab93334b3a39a1cd7d6a2dadb35b7e2aa78"
     }
 }

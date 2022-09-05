@@ -19,7 +19,8 @@ class TripViewModel: ObservableObject {
     
     private let repository: SPTransAPIRepository
     init(repository: SPTransAPIRepository) {
-        self.repository = repository    
+        self.repository = repository
+        //checkAuth()
     }
     
 }
@@ -28,17 +29,20 @@ extension TripViewModel {
     
     func checkAuth() {
         loading = true
-//        repository.fetchTrips(searchName: <#T##String#>) { trips in
-//            <#code#>
-//        }
-        
-        
-//        anyCancellation = repository.authenticationRequestNative()
-//            .mapError({ (error) -> Error in
-//                print(error)
-//                self.loading = false
-//                return error
-//            })
+        repository.authenticationRequest() { data, error in
+            if let result = data {
+                print(result)
+            }else {
+                print("Error when authenticate")
+            }
+        }
+
+//        anyCancellation = repository.authenticationRequest()
+////            .mapError({ (error) -> Error in
+////                print(error)
+////                self.loading = false
+////                return error
+////            })
 //            .sink(receiveCompletion: { _ in },
 //                  receiveValue: { _ in
 //                    print("\n✅ App autenticado na API da SPTrans!\n")
@@ -53,6 +57,7 @@ extension TripViewModel {
         repository.fetchTrips(searchName: text) { data, error in
             self.loading = false
             if let result = data {
+                print("\(result)")
                 if (result is ResultSuccess<NSArray>) {
                     guard let successResult = result as? ResultSuccess<NSArray> else {
                         return

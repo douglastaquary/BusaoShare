@@ -7,10 +7,15 @@ import kotlinx.coroutines.*
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.get
 import com.douglastaquary.busaoshare.model.Result
+import com.rickclephas.kmp.nativecoroutines.NativeCoroutineScope
+import kotlinx.coroutines.flow.*
 
 open class SPTransAPIRepository: KoinComponent {
     private val sptransApi: SPTransAPI = get()
     private var isAuthenticated: Boolean = false
+
+    @NativeCoroutineScope
+    private val mainScope: CoroutineScope = MainScope()
 
     suspend fun authenticationRequest(): Boolean {
         Logger.i { "authenticationRequest" }
@@ -38,5 +43,21 @@ open class SPTransAPIRepository: KoinComponent {
             return Result.Error(e)
         }
         return Result.Success(emptyList())
+    }
+
+    fun fetchTripAsFlow(searchName: String): Flow<List<Trip>> {
+        Logger.i { "fetchTripAsFlow() - searchName: $searchName" }
+        return flow {
+            while (true) {
+                val tripList = sptransApi.fetchTrips(searchText = "$searchName")
+                emit(tripList)
+                Logger.d { tripList.toString() }
+                delay(POLL_INTERVAL)
+            }
+        }
+    }
+
+    companion object {
+        private const val POLL_INTERVAL = 10000L
     }
 }

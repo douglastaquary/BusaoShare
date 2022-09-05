@@ -32,7 +32,7 @@ fun commonModule() = module {
     single { SPTransAPI(get()) }
 }
 
-fun createJson() = Json { isLenient = true; ignoreUnknownKeys = true }
+fun createJson() = Json { prettyPrint = true; isLenient = true; ignoreUnknownKeys = true; explicitNulls = false }
 
 fun createHttpClient(json: Json) = HttpClient {
     install(ContentNegotiation) {
