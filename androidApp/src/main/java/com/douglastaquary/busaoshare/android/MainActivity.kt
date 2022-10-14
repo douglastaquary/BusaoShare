@@ -29,6 +29,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 class MainActivity : ComponentActivity() {
     private val tripListViewModel by viewModel<SearchTripViewModel>()
 
+
     @OptIn(ExperimentalComposeApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

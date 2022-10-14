@@ -49,11 +49,17 @@ fun TripListScreen(
     val tripListState = viewModel.tripListState.collectAsState(UiState.Loading)
     val search by viewModel.search.collectAsState()
 
+    fun getTrips() {
+        coroutineScope.launch {
+            viewModel.getTrips("interlagos")
+        }
+    }
+
     Scaffold(
         topBar = {
             SearchBar(
                 search = search,
-                onSearch = { coroutineScope.launch { viewModel.getTrips("centro") } },
+                onSearch = { getTrips() },
             )
         }
     ) {
