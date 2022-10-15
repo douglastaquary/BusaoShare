@@ -119,7 +119,7 @@ kotlin {
 }
 
 multiplatformSwiftPackage {
-    packageName("BikeShareKit")
+    packageName("BusaoShareKit")
     swiftToolsVersion("5.3")
     targetPlatforms {
         iOS { v("13") }
