@@ -2,36 +2,25 @@ package com.douglastaquary.busaoshare.android.ui.screens
 
 import android.annotation.SuppressLint
 import android.util.Log
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyItemScope
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.datastore.preferences.protobuf.Empty
 import androidx.lifecycle.compose.ExperimentalLifecycleComposeApi
-import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.navigation.NavHostController
-import androidx.paging.PagingData
-import androidx.paging.compose.LazyPagingItems
-import androidx.paging.compose.collectAsLazyPagingItems
-import co.touchlab.kermit.Logger
 import com.douglastaquary.busaoshare.android.ui.SearchBar
-import com.douglastaquary.busaoshare.android.ui.SearchTextField
 import com.douglastaquary.busaoshare.android.ui.viewModels.SearchTripViewModel
-import com.douglastaquary.busaoshare.android.ui.viewModels.TripListUiState
 import com.douglastaquary.busaoshare.android.ui.viewModels.UiState
 import com.douglastaquary.busaoshare.model.Trip
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.count
-import kotlinx.coroutines.launch
 import org.koin.androidx.compose.getViewModel
-
-
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter", "CoroutineCreationDuringComposition")
 @OptIn(
@@ -45,14 +34,11 @@ fun TripListScreen(
     onSearch: (String?) -> Unit,
 ) {
     val snackbarHostState = remember { SnackbarHostState() }
-    val coroutineScope = rememberCoroutineScope()
     val tripListState = viewModel.tripListState.collectAsState(UiState.Loading)
     val search by viewModel.search.collectAsState()
 
     fun getTrips() {
-        coroutineScope.launch {
-            viewModel.getTrips("interlagos")
-        }
+        viewModel.getTrips("interlagos")
     }
 
     Scaffold(
@@ -75,13 +61,13 @@ fun TripListScreen(
             }
             is UiState.Success -> {
                 LazyColumn {
-                    if(uiState.data.isEmpty()) {
+                    if (uiState.data.isEmpty()) {
                         item { EmptyContent() }
                     }
                     items(uiState.data) { trip ->
                         TripItemView(
                             trip = trip,
-                            tripSelected = {  trip -> Log.e("TripContent", "Selected: $trip") },
+                            tripSelected = { trip -> Log.e("TripContent", "Selected: $trip") },
                         )
                     }
                 }

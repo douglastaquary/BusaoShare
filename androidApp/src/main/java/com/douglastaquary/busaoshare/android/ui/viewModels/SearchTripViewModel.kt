@@ -3,12 +3,11 @@ package com.douglastaquary.busaoshare.android.ui.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import co.touchlab.kermit.Logger
-import com.douglastaquary.busaoshare.model.Trip
 import com.douglastaquary.busaoshare.model.Result
+import com.douglastaquary.busaoshare.model.Trip
 import com.douglastaquary.busaoshare.repository.SPTransAPIRepository
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
-import java.util.*
 
 data class TripListUiState(
     val items: List<Trip> = emptyList(),
@@ -26,7 +25,7 @@ sealed class UiState<out T : Any> {
 @ExperimentalCoroutinesApi
 class SearchTripViewModel(
     private val repository: SPTransAPIRepository
-    ) : ViewModel() {
+) : ViewModel() {
 
     val tripListState = MutableStateFlow<UiState<List<Trip>>>(UiState.Empty)
     private val _search = MutableStateFlow(null as String?)
@@ -34,21 +33,33 @@ class SearchTripViewModel(
     var isAuthenticated = MutableStateFlow<Boolean>(false)
 
     init {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             getAuthorization()
         }
     }
 
-    suspend fun getAuthorization() {
-        val result = repository.authenticationRequest()
-        isAuthenticated.value = result
-        Logger.a("Authorization result = $result")
+    private suspend fun getAuthorization() {
+        repository.authenticationRequest().also {
+            isAuthenticated.value = it
+            Logger.a("Authorization result = $it")
+        }
     }
 
-    suspend fun getTrips(tripName: String) {
-        println("getTrips, tripName = $tripName")
+    fun getTrips(tripName: String) {
         tripListState.value = UiState.Loading
-        var trip1 = Trip(
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.fetchTrips(tripName).also {
+                tripListState.value = when (it) {
+                    is Result.Success -> UiState.Success(it.data)
+                    is Result.Error -> UiState.Error(it.e)
+                }
+            }
+        }
+    }
+
+    private fun tripsMock() {
+        tripListState.value = UiState.Loading
+        val trip1 = Trip(
             firstPartOfTheSign = "Terminal Bandeira",
             secondaryTerminal = "Terminal jabaquara",
             withoutSecondaryTerminal = false,
@@ -59,12 +70,11 @@ class SearchTripViewModel(
             tripId = "1"
         )
         tripListState.value = UiState.Success(listOf(trip1))
+    }
 
-//        val result = repository.fetchTrips(tripName)
-//        tripListState.value = when (result) {
-//            is Result.Success -> UiState.Success(result.data)
-//            is Result.Error -> UiState.Error(result.e)
-//        }
+    override fun onCleared() {
+        super.onCleared()
+        viewModelScope.cancel()
     }
 
     companion object {
