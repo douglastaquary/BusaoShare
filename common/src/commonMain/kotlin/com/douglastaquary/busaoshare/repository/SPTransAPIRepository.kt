@@ -3,16 +3,14 @@ package com.douglastaquary.busaoshare.repository
 import co.touchlab.kermit.Logger
 import com.douglastaquary.busaoshare.model.Result
 import com.douglastaquary.busaoshare.model.Trip
-import com.douglastaquary.busaoshare.remote.SPTransAPI
+import com.douglastaquary.busaoshare.remote.ISPTransAPI
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import org.koin.core.component.KoinComponent
-import org.koin.core.component.get
 
-class SPTransAPIRepository : ISPTransAPIRepository, KoinComponent {
-
-    private val sptransApi: SPTransAPI = get()
+class SPTransAPIRepository(
+    private val sptransApi: ISPTransAPI
+) : ISPTransAPIRepository {
 
     override suspend fun authenticationRequest(): Boolean {
         Logger.i { "authenticationRequest" }
@@ -32,7 +30,7 @@ class SPTransAPIRepository : ISPTransAPIRepository, KoinComponent {
         }
     }
 
-   override suspend fun fetchTripAsFlow(searchName: String): Flow<List<Trip>> = flow {
+    override suspend fun fetchTripAsFlow(searchName: String): Flow<List<Trip>> = flow {
         Logger.i { "fetchTripAsFlow() - searchName: $searchName" }
         emit(emptyList())
         while (true) {
