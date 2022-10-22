@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import co.touchlab.kermit.Logger
 import com.douglastaquary.busaoshare.model.Result
 import com.douglastaquary.busaoshare.model.Trip
-import com.douglastaquary.busaoshare.repository.SPTransAPIRepository
+import com.douglastaquary.busaoshare.repository.ISPTransAPIRepository
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 
@@ -24,7 +24,7 @@ sealed class UiState<out T : Any> {
 
 @ExperimentalCoroutinesApi
 class SearchTripViewModel(
-    private val repository: SPTransAPIRepository
+    private val repository: ISPTransAPIRepository
 ) : ViewModel() {
 
     val tripListState = MutableStateFlow<UiState<List<Trip>>>(UiState.Empty)
