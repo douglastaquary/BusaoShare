@@ -1,5 +1,6 @@
 package com.douglastaquary.busaoshare.di
 
+import com.douglastaquary.busaoshare.remote.ISPTransAPI
 import com.douglastaquary.busaoshare.remote.SPTransAPI
 import com.douglastaquary.busaoshare.repository.ISPTransAPIRepository
 import com.douglastaquary.busaoshare.repository.SPTransAPIRepository
@@ -28,8 +29,8 @@ fun initKoin() = initKoin() {}
 fun commonModule() = module {
     single { createJson() }
     single { createHttpClient(get()) }
-    single<ISPTransAPIRepository> { SPTransAPIRepository() }
-    single { SPTransAPI(get()) }
+    single<ISPTransAPI> { SPTransAPI(get()) }
+    single<ISPTransAPIRepository> { SPTransAPIRepository(get()) }
 }
 
 fun createJson() = Json { isLenient = true; ignoreUnknownKeys = true }
