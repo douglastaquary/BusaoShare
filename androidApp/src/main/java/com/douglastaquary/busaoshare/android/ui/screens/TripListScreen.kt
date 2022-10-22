@@ -18,7 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.compose.ExperimentalLifecycleComposeApi
 import com.douglastaquary.busaoshare.android.ui.SearchBar
 import com.douglastaquary.busaoshare.android.ui.viewModels.SearchTripViewModel
-import com.douglastaquary.busaoshare.android.ui.viewModels.UiState
+import com.douglastaquary.busaoshare.android.ui.state.UiState
 import com.douglastaquary.busaoshare.model.Trip
 import org.koin.androidx.compose.getViewModel
 
