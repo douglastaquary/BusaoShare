@@ -10,16 +10,16 @@ import kotlinx.coroutines.flow.flow
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.get
 
-class SPTransAPIRepository : KoinComponent {
+class SPTransAPIRepository : ISPTransAPIRepository, KoinComponent {
 
     private val sptransApi: SPTransAPI = get()
 
-    suspend fun authenticationRequest(): Boolean {
+    override suspend fun authenticationRequest(): Boolean {
         Logger.i { "authenticationRequest" }
         return sptransApi.authentication()
     }
 
-    suspend fun fetchTrips(searchName: String): Result<List<Trip>> {
+    override suspend fun fetchTrips(searchName: String): Result<List<Trip>> {
         return try {
             Logger.i { "Fetch Trips Request" }
             sptransApi.fetchTrips(searchText = searchName).run {
@@ -32,11 +32,11 @@ class SPTransAPIRepository : KoinComponent {
         }
     }
 
-    fun fetchTripAsFlow(searchName: String): Flow<List<Trip>> = flow {
+   override suspend fun fetchTripAsFlow(searchName: String): Flow<List<Trip>> = flow {
         Logger.i { "fetchTripAsFlow() - searchName: $searchName" }
         emit(emptyList())
         while (true) {
-            val tripList = sptransApi.fetchTrips(searchText = "$searchName")
+            val tripList = sptransApi.fetchTrips(searchText = searchName)
             Logger.i { "fetchTripAsFlow() - result: ${tripList.toString()}" }
             emit(tripList)
             Logger.d { tripList.toString() }
