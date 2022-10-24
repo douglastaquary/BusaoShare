@@ -10,13 +10,13 @@ import com.douglastaquary.busaoshare.android.ui.state.UiState
 import com.douglastaquary.busaoshare.android.ui.screens.search.SearchWidgetState
 import com.douglastaquary.busaoshare.model.Result
 import com.douglastaquary.busaoshare.model.Trip
-import com.douglastaquary.busaoshare.repository.SPTransAPIRepository
+import com.douglastaquary.busaoshare.repository.ISPTransAPIRepository
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 
 @ExperimentalCoroutinesApi
 class SearchTripViewModel(
-    private val repository: SPTransAPIRepository
+    private val repository: ISPTransAPIRepository
 ) : ViewModel() {
 
     val tripListState = MutableStateFlow<UiState<List<Trip>>>(UiState.Empty)
