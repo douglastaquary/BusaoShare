@@ -14,4 +14,4 @@ Minimum of XCode 13.2 beta is required for iOS project as it now uses Swift 5.5 
 
 ### Jetpack Compose Android App
 
-<a href=""><img src ="images/screen_search_trip.png"></a>
+<a href=""><img src ="images/screenshot_busao_share_android.png"></a>

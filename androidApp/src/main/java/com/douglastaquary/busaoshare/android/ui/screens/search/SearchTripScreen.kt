@@ -39,7 +39,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.douglastaquary.busaoshare.android.ui.composables.TripItemView
 import com.douglastaquary.busaoshare.android.ui.screens.search.viewModels.SearchTripViewModel
-import com.douglastaquary.busaoshare.android.ui.screens.search.viewModels.UiState
+import com.douglastaquary.busaoshare.android.ui.state.UiState
 
 @Composable
 fun SearchTripScreen(viewModel: SearchTripViewModel) {
