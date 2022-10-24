@@ -1,6 +1,6 @@
 package com.douglastaquary.busaoshare.android.di
 
-import com.douglastaquary.busaoshare.android.ui.viewModels.SearchTripViewModel
+import com.douglastaquary.busaoshare.android.ui.screens.search.viewModels.SearchTripViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

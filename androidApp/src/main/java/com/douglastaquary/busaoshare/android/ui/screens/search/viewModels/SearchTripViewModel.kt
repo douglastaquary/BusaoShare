@@ -1,9 +1,13 @@
-package com.douglastaquary.busaoshare.android.ui.viewModels
+package com.douglastaquary.busaoshare.android.ui.screens.search.viewModels
 
+import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.State
+import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import co.touchlab.kermit.Logger
 import com.douglastaquary.busaoshare.android.ui.state.UiState
+import com.douglastaquary.busaoshare.android.ui.screens.search.SearchWidgetState
 import com.douglastaquary.busaoshare.model.Result
 import com.douglastaquary.busaoshare.model.Trip
 import com.douglastaquary.busaoshare.repository.SPTransAPIRepository
@@ -16,9 +20,16 @@ class SearchTripViewModel(
 ) : ViewModel() {
 
     val tripListState = MutableStateFlow<UiState<List<Trip>>>(UiState.Empty)
-    private val _search = MutableStateFlow(null as String?)
-    val search: StateFlow<String?> = _search
     var isAuthenticated = MutableStateFlow<Boolean>(false)
+
+    private val _searchWidgetState: MutableState<SearchWidgetState> =
+        mutableStateOf(value = SearchWidgetState.CLOSED)
+    val searchWidgetState: State<SearchWidgetState> = _searchWidgetState
+
+    private val _searchTextState: MutableState<String> =
+        mutableStateOf(value = "")
+    val searchTextState: State<String> = _searchTextState
+
 
     init {
         viewModelScope.launch(Dispatchers.IO) {
@@ -45,6 +56,14 @@ class SearchTripViewModel(
         }
     }
 
+    fun updateSearchWidgetState(newValue: SearchWidgetState) {
+        _searchWidgetState.value = newValue
+    }
+
+    fun updateSearchTextState(newValue: String) {
+        _searchTextState.value = newValue
+    }
+
     private fun tripsMock() {
         tripListState.value = UiState.Loading
         val trip1 = Trip(
@@ -65,7 +84,4 @@ class SearchTripViewModel(
         viewModelScope.cancel()
     }
 
-    companion object {
-        private const val POLL_INTERVAL = 10000L
-    }
 }
