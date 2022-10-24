@@ -10,10 +10,11 @@ import io.ktor.client.request.*
 class SPTransAPI(
     private val client: HttpClient,
     private val baseUrl: String = "http://api.olhovivo.sptrans.com.br/v2.1"
-) {
+) : ISPTransAPI {
+
     private var cookie: String? = null
 
-    suspend fun authentication(): Boolean {
+    override suspend fun authentication(): Boolean {
         return client.post {
             url("$baseUrl/Login/Autenticar")
             parameter("token", API_TOKEN)
@@ -22,7 +23,7 @@ class SPTransAPI(
         }.body()
     }
 
-    suspend fun fetchTrips(searchText: String): List<Trip> {
+    override suspend fun fetchTrips(searchText: String): List<Trip> {
         return client.get {
             url("$baseUrl/Linha/Buscar")
             parameter("termosBusca", searchText)
@@ -31,7 +32,7 @@ class SPTransAPI(
         }.body()
     }
 
-    suspend fun fetchTripArrives(tripNumber: Int): List<ArrivalOfVehiclesPerTrip> {
+    override suspend fun fetchTripArrives(tripNumber: Int): List<ArrivalOfVehiclesPerTrip> {
         return client.get {
             url("$baseUrl/Previsao/Linha")
             parameter("codigoLinha", tripNumber)
