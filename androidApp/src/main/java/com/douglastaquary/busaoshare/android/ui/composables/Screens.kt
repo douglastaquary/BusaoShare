@@ -1,4 +1,4 @@
-package com.douglastaquary.busaoshare.android.ui.screens
+package com.douglastaquary.busaoshare.android.ui.composables
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.LocationOn

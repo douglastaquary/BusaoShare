@@ -20,7 +20,7 @@ class TripViewModel: ObservableObject {
     private let repository: SPTransAPIRepository
     init(repository: SPTransAPIRepository) {
         self.repository = repository
-        //checkAuth()
+        checkAuth()
     }
     
 }
