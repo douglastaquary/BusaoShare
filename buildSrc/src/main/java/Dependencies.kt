@@ -1,23 +1,31 @@
 object Versions {
+    const val androidMinSdk = 21
+    const val androidCompileSdk = 33
+    const val androidTargetSdk = androidCompileSdk
+
+    const val kotlin = "1.7.20"
+
     const val kotlinCoroutines = "1.6.1"
     const val ktor = "2.0.0"
     const val kotlinxSerialization = "1.3.1"
     const val koin = "3.2.0"
     const val lifecycle = "2.2.0-alpha01"
-    const val multiplatformSettings = "0.8.1"
-    const val kmpNativeCoroutinesVersion = "0.12.1-new-mm"
+    const val multiplatformSettings = "1.0.0-alpha01"
+    const val kmpNativeCoroutines = "0.13.1"
 
     const val material = "1.6.1"
     const val activityCompose = "1.5.0"
     const val lifecycleKtx = "2.6.0-alpha01"
     const val lifecycleRuntimeKtx = lifecycleKtx
     const val lifecycleViewmodelKtx = lifecycleKtx
-    const val osmdroidAndroid = "6.1.10"
+    const val composeMaterial3 = "1.0.0-rc01"
 
-    const val compose = "1.2.0-alpha08"
-    const val navCompose = "2.4.2"
+    const val compose = "1.3.0-rc01"
+    const val composeCompiler = "1.3.2"
+    const val navCompose = "2.5.2"
     const val slf4j = "1.7.30"
     const val composeDesktop = "0.0.0-master-dev673"
+    const val jetlime = "1.0.3"
 
     const val realm = "0.10.2"
     const val junit = "4.12"
@@ -41,6 +49,7 @@ object Deps {
             "androidx.compose.foundation:foundation-layout:${Versions.compose}"
         const val material = "androidx.compose.material:material:${Versions.compose}"
         const val navigation = "androidx.navigation:navigation-compose:${Versions.navCompose}"
+        const val material3 = "androidx.compose.material3:material3:${Versions.composeMaterial3}"
     }
 
     object Kotlinx {

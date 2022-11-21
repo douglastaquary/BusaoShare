@@ -2,6 +2,7 @@ package com.douglastaquary.busaoshare.repository
 
 import co.touchlab.kermit.Logger
 import com.douglastaquary.busaoshare.model.Result
+import com.douglastaquary.busaoshare.model.Stop
 import com.douglastaquary.busaoshare.model.Trip
 import com.douglastaquary.busaoshare.remote.ISPTransAPI
 import kotlinx.coroutines.delay
@@ -22,6 +23,20 @@ class SPTransAPIRepository(
             Logger.i { "Fetch Trips Request" }
             sptransApi.fetchTrips(searchText = searchName).run {
                 Logger.i { "fetchTrips, trips, size = $size" }
+                Result.Success(this)
+            }
+        } catch (e: Exception) {
+            println(e)
+            Result.Error(e)
+        }
+    }
+
+
+    override suspend fun fetchStops(tripID: String): Result<List<Stop>> {
+        return try {
+            Logger.i { "Fetch Stop Request" }
+            sptransApi.fetchStopsPerTrip(tripID = tripID).run {
+                Logger.i { "fetchStopsPerTrip, stops, size = $size" }
                 Result.Success(this)
             }
         } catch (e: Exception) {

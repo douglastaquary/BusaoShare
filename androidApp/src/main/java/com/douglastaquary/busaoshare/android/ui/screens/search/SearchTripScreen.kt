@@ -37,12 +37,14 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
+import com.douglastaquary.busaoshare.android.ui.composables.Screens
 import com.douglastaquary.busaoshare.android.ui.composables.TripItemView
 import com.douglastaquary.busaoshare.android.ui.screens.search.viewModels.SearchTripViewModel
 import com.douglastaquary.busaoshare.android.ui.state.UiState
 
 @Composable
-fun SearchTripScreen(viewModel: SearchTripViewModel) {
+fun SearchTripScreen(viewModel: SearchTripViewModel, navController: NavHostController) {
 
     val searchWidgetState by viewModel.searchWidgetState
     val searchTextState by viewModel.searchTextState
@@ -88,7 +90,9 @@ fun SearchTripScreen(viewModel: SearchTripViewModel) {
                     items(uiState.data) { trip ->
                         TripItemView(
                             trip = trip,
-                            tripSelected = { trip -> Log.e("TripContent", "Selected: $trip") },
+                            tripSelected = {
+                                navController.navigate(Screens.StopListScreen.route)
+                                Log.e("TripContent", "Selected: $trip") },
                         )
                     }
                 }
@@ -263,7 +267,7 @@ fun SearchAppBarPreview() {
 }
 
 @Composable
-private fun LazyItemScope.EmptyContent() {
+fun LazyItemScope.EmptyContent() {
     Box(
         modifier = Modifier.fillParentMaxSize(),
         contentAlignment = Alignment.Center,

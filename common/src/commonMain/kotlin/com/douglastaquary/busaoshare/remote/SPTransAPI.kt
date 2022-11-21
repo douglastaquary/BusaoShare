@@ -2,6 +2,7 @@ package com.douglastaquary.busaoshare.remote
 
 import co.touchlab.kermit.Logger
 import com.douglastaquary.busaoshare.model.ArrivalOfVehiclesPerTrip
+import com.douglastaquary.busaoshare.model.Stop
 import com.douglastaquary.busaoshare.model.Trip
 import io.ktor.client.HttpClient
 import io.ktor.client.call.*
@@ -29,6 +30,15 @@ class SPTransAPI(
             parameter("termosBusca", searchText)
             header("Cookie", cookie)
             Logger.a("Requesting fetchTrips - params: $searchText")
+        }.body()
+    }
+
+    override suspend fun fetchStopsPerTrip(tripID: String): List<Stop> {
+        return client.get {
+            url("$baseUrl/Parada/BuscarParadasPorLinha")
+            parameter("codigoLinha", tripID)
+            header("Cookie", cookie)
+            Logger.a("Requesting stops - params: $tripID")
         }.body()
     }
 
