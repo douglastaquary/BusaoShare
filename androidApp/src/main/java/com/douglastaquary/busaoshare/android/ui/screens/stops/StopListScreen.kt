@@ -9,10 +9,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import co.touchlab.kermit.Logger
 import com.douglastaquary.busaoshare.android.ui.screens.stops.viewModel.StopListViewModel
 import com.douglastaquary.busaoshare.android.ui.state.UiState
 import com.douglastaquary.busaoshare.model.Stop
-import com.douglastaquary.busaoshare.model.Trip
 import com.pushpal.jetlime.data.JetLimeItemsModel
 import com.pushpal.jetlime.data.config.JetLimeViewConfig
 import com.pushpal.jetlime.data.config.LineType
@@ -39,15 +39,6 @@ fun StopListScreen(viewModel: StopListViewModel, tripId: String, popBack: () -> 
         contentWindowInsets = WindowInsets(0, 0, 0, 0)
     ) { paddingValues ->
         when (val uiState = stopListState.value) {
-            is UiState.Empty -> {
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .wrapContentSize(Alignment.Center)
-                ) {
-                    //Text(text = "Tente buscar por nome ou número da linha")
-                }
-            }
             is UiState.Success -> {
                 Column(Modifier.padding(paddingValues)) {
                     StopTimelineView(stops = uiState.data, viewModel = viewModel)
@@ -71,6 +62,9 @@ fun StopListScreen(viewModel: StopListViewModel, tripId: String, popBack: () -> 
                 ) {
                     //Text(text = "${uiState.exception}")
                 }
+            }
+            else -> {
+                Logger.a("Erro ao buscar lista de paradas!")
             }
         }
     }
