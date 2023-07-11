@@ -76,7 +76,7 @@ kotlin {
                 implementation("io.ktor:ktor-client-android:${Versions.ktor}")
             }
         }
-        val androidTest by getting
+        val androidUnitTest by getting
 
         val iosX64Main by getting
         val iosArm64Main by getting
@@ -109,6 +109,8 @@ android {
         minSdk = 21
         targetSdk = 31
     }
+
+    namespace = "com.douglastaquary.busaoshare.android"
 }
 
 kotlin {

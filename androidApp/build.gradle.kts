@@ -1,8 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import java.io.FileInputStream
-import java.util.*
 
 plugins {
+    //id("org.jetbrains.compose")
     id("com.android.application")
     kotlin("android")
 }
@@ -22,25 +21,35 @@ android {
         }
     }
 
+    namespace = "com.douglastaquary.busaoshare.android"
+
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     composeOptions {
         kotlinCompilerExtensionVersion = Versions.composeCompiler
     }
 
+    buildTypes {
+        getByName("release") {
+            isMinifyEnabled = false
+        }
+    }
+
     compileOptions {
         // Flag to enable support for the new language APIs
-        isCoreLibraryDesugaringEnabled = true
+        //isCoreLibraryDesugaringEnabled = true
 
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
 
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
     packagingOptions {
         resources {
             excludes += setOf("META-INF/*.kotlin_module")
@@ -60,9 +69,9 @@ tasks.withType<KotlinCompile> {
 }
 
 dependencies {
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.5")
-    implementation("com.google.android.material:material:1.6.1")
-    implementation("androidx.activity:activity-compose:1.6.0")
+//    with(Deps.Android) {
+//        implementation(osmdroidAndroid)
+//    }
     implementation("io.github.pushpalroy:jetlime:${Versions.jetlime}")
 
     with(Deps.AndroidX) {
@@ -74,14 +83,19 @@ dependencies {
 
     with(Deps.Compose) {
         implementation(ui)
+        implementation(compiler)
         implementation(uiGraphics)
         implementation(uiTooling)
         implementation(foundationLayout)
         implementation(material)
         implementation(navigation)
+        implementation(uiTooling)
         implementation(material3)
     }
 
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0-alpha10")
+    // To use constraintlayout in compose
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.1.0-alpha10")
     implementation("androidx.glance:glance-appwidget:1.0.0-alpha01")
 
     with(Deps.Koin) {
