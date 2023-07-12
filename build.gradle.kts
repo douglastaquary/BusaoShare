@@ -35,7 +35,7 @@ allprojects {
     configurations.all {
         resolutionStrategy.eachDependency {
             if (requested.module.name.startsWith("kotlin-stdlib")) {
-                useVersion("1.9.0-Beta")
+                useVersion("1.9.0")
             }
         }
     }

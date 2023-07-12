@@ -16,7 +16,7 @@ object Versions {
     const val koin = "3.2.0"
     const val lifecycle = "2.2.0-alpha01"
     const val multiplatformSettings = "1.0.0-alpha01"
-    const val kmpNativeCoroutines = "0.13.1"
+    const val kmpNativeCoroutines = "1.0.0-ALPHA-13"
 
     const val material = "1.6.1"
     const val activityCompose = "1.7.1"
