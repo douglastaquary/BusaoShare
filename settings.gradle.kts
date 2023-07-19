@@ -1,4 +1,4 @@
-rootProject.name = "MyApplication"
+rootProject.name = "BusaoShare"
 
 include(":androidApp")
 include(":shared")
@@ -24,6 +24,7 @@ pluginManagement {
         id("com.android.library").version(agpVersion)
 
         id("org.jetbrains.compose").version(composeVersion)
+        id("org.jetbrains.kotlin.android") version "1.8.20"
     }
 }
 

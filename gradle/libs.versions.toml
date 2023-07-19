@@ -1,0 +1,51 @@
+[versions]
+kotlin = "1.8.20"
+android_gradle_plugin = "8.0.2"
+compose = "1.4.1"
+kotlinx_coroutines = "1.7.2"
+kotlinx_date_time = "0.4.0"
+kotlinx_immutable_collections = "0.3.5"
+kotlininject = "0.6.1"
+ktor = "2.3.2"
+ksp = "1.9.0-1.0.11"
+moko_resources = "0.23.0"
+material_color_utilities = "1.0.0-alpha01"
+androidx_activity = "1.7.2"
+androidx_appcompat = "1.6.1"
+androidx_core = "1.10.1"
+androidx_collection = "1.3.0-alpha04"
+
+[libraries]
+androidx_activity_compose = { module = "androidx.activity:activity-compose", version.ref = "androidx_activity" }
+androidx_appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidx_appcompat" }
+androidx_core = { module = "androidx.core:core-ktx", version.ref = "androidx_core" }
+androidx_collection = { module = "androidx.collection:collection", version.ref = "androidx_collection" }
+compose_runtime = { module = "org.jetbrains.compose.runtime:runtime", version.ref = "compose" }
+compose_foundation = { module = "org.jetbrains.compose.foundation:foundation", version.ref = "compose" }
+compose_material = { module = "org.jetbrains.compose.material:material", version.ref = "compose" }
+compose_material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "compose" }
+compose_resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "compose" }
+ktor_core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+moko_resources = { module = "dev.icerock.moko:resources", version.ref = "moko_resources" }
+moko_resources_compose = { module = "dev.icerock.moko:resources-compose", version.ref = "moko_resources" }
+kotlinx_coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx_coroutines" }
+kotlinx_datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx_date_time" }
+kotlinx_immutable_collections = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "kotlinx_immutable_collections" }
+material_color_utilities = { module = "dev.sasikanth:material-color-utilities", version.ref = "material_color_utilities" }
+kotlininject_compiler = { module = 'me.tatarka.inject:kotlin-inject-compiler-ksp', version.ref = 'kotlininject' }
+kotlininject_runtime = { module = 'me.tatarka.inject:kotlin-inject-runtime', version.ref = 'kotlininject' }
+
+[plugins]
+android_application = { id = "com.android.application", version.ref = "android_gradle_plugin" }
+android_library = { id = "com.android.library", version.ref = "android_gradle_plugin" }
+kotlin_cocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+ksp = { id = 'com.google.devtools.ksp', version.ref = 'ksp' }
+kotlin_multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+moko_resources = { id = "dev.icerock.mobile.multiplatform-resources", version.ref = "moko_resources" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+
+
+[bundles]
+compose = [ "compose-runtime", "compose-foundation", "compose_material", "compose_material3", "compose_resources" ]
+moko_resources = [ "moko_resources", "moko_resources_compose" ]
+kotlinx = [ "kotlinx_coroutines", "kotlinx_datetime", "kotlinx_immutable_collections" ]
