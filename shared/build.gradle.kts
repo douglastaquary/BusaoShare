@@ -71,6 +71,7 @@ kotlin {
                 implementation(compose.desktop.common)
             }
         }
+
     }
 }
 
