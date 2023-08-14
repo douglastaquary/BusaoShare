@@ -1,9 +1,11 @@
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
+    id("kotlinx-serialization")
     id("com.android.library")
     id("org.jetbrains.compose")
     id("dev.icerock.mobile.multiplatform-resources")
+
 
 }
 
@@ -42,8 +44,10 @@ kotlin {
                 implementation(compose.components.resources)
                 api("dev.icerock.moko:resources:0.23.0")
                 api("dev.icerock.moko:resources-compose:0.23.0")
-//                implementation(libs.ktor.core)
+                api("co.touchlab:kermit:1.0.0")
 
+                implementation(libs.bundles.kotlinx)
+                implementation(libs.ktor.core)
                 implementation(libs.androidx.collection)
                 implementation(libs.material.color.utilities)
             }
